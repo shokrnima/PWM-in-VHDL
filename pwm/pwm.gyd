@@ -1,0 +1,30 @@
+Pin Freeze File:  version P.20131013
+
+9536XL44PC XC9536XL-5-PC44
+clk_counter S:PIN5
+lach S:PIN6
+number<0> S:PIN37
+number<1> S:PIN34
+number<2> S:PIN29
+number<3> S:PIN40
+number<4> S:PIN42
+number<5> S:PIN27
+number<6> S:PIN1
+number<7> S:PIN2
+select_source_laser S:PIN36
+start S:PIN39
+out_pwm S:PIN44
+
+
+;The remaining section of the .gyd file is for documentation purposes only.
+;It shows where your internal equations were placed in the last successful fit.
+
+PARTITION FB1_10 reg_count<0> reg_pwm<7> reg_pwm<6> reg_pwm<5>
+		 reg_pwm<4> reg_pwm<3> reg_pwm<2> reg_pwm<1>
+		 reg_pwm<0>
+PARTITION FB2_1 EXP4_ out_pwm_OBUF $OpTx$INV$3 EXP5_
+		
+PARTITION FB2_8 reg_count<7> reg_count<6> reg_count<5> reg_count<4>
+		 reg_count<3> reg_count<2> reg_count<1> $OpTx$$OpTx$FX_DC$5_INV$175
+		 EXP6_ EXP7_ pwm_out
+

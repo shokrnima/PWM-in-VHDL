@@ -1,0 +1,122 @@
+<html><head><link type='text/css' href='style.css' rel='stylesheet'></head><body class='pgBgnd'>
+<h3 align='center'>Equations</h3>
+<table width='90%' align='center' border='1' cellpadding='0' cellspacing='0'>
+<tr><td>
+</td></tr><tr><td>
+********** Mapped Logic **********
+</td></tr><tr><td>
+</td></tr><tr><td>
+$OpTx$$OpTx$FX_DC$5_INV$175 <= (NOT reg_count(7) AND reg_pwm(7));
+</td></tr><tr><td>
+</td></tr><tr><td>
+$OpTx$INV$3 <= ((NOT reg_count(0) AND NOT reg_count(1) AND reg_pwm(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	reg_pwm(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reg_count(0) AND NOT reg_count(2) AND reg_pwm(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	reg_pwm(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reg_count(0) AND reg_pwm(1) AND reg_pwm(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	reg_pwm(0))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reg_count(4) AND reg_pwm(4))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reg_count(2) AND reg_pwm(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reg_count(1) AND NOT reg_count(2) AND reg_pwm(1))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reg_count(1) AND reg_pwm(1) AND reg_pwm(2))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reg_count(0) AND NOT reg_count(1) AND NOT reg_count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	reg_pwm(0)));
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+</td></tr><tr><td>
+out_pwm <= NOT ((NOT pwm_out AND select_source_laser));
+</td></tr><tr><td>
+FDCPE_pwm_out: FDCPE port map (pwm_out,pwm_out_D,clk_counter,NOT start,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;pwm_out_D <= ((out_pwm_OBUF.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_count(4) AND reg_count(6) AND NOT reg_pwm(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT reg_pwm(5) AND NOT $OpTx$$OpTx$FX_DC$5_INV$175)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_count(4) AND NOT reg_pwm(4) AND NOT reg_pwm(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT reg_pwm(5) AND NOT $OpTx$$OpTx$FX_DC$5_INV$175)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_count(6) AND reg_count(3) AND NOT reg_pwm(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$INV$3 AND NOT $OpTx$$OpTx$FX_DC$5_INV$175)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_count(6) AND NOT reg_pwm(3) AND NOT reg_pwm(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$INV$3 AND NOT $OpTx$$OpTx$FX_DC$5_INV$175)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (NOT reg_pwm(6) AND NOT reg_pwm(3) AND NOT reg_pwm(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$INV$3 AND NOT $OpTx$$OpTx$FX_DC$5_INV$175)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (EXP6_.EXP)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_count(4) AND reg_count(5) AND NOT reg_pwm(4) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT reg_pwm(6) AND NOT $OpTx$$OpTx$FX_DC$5_INV$175)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_count(6) AND reg_count(3) AND reg_count(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$INV$3 AND NOT $OpTx$$OpTx$FX_DC$5_INV$175)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_count(6) AND reg_count(5) AND NOT reg_pwm(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$INV$3 AND NOT $OpTx$$OpTx$FX_DC$5_INV$175)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_count(3) AND reg_count(5) AND NOT reg_pwm(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$INV$3 AND NOT $OpTx$$OpTx$FX_DC$5_INV$175)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_count(5) AND NOT reg_pwm(6) AND NOT reg_pwm(3) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$INV$3 AND NOT $OpTx$$OpTx$FX_DC$5_INV$175)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_count(7) AND NOT reg_pwm(7))
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_count(6) AND NOT reg_pwm(6) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$5_INV$175)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_count(6) AND reg_count(5) AND NOT reg_pwm(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$5_INV$175)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_count(5) AND NOT reg_pwm(6) AND NOT reg_pwm(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT $OpTx$$OpTx$FX_DC$5_INV$175)
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	OR (reg_count(4) AND reg_count(6) AND reg_count(5) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	NOT reg_pwm(4) AND NOT $OpTx$$OpTx$FX_DC$5_INV$175));
+</td></tr><tr><td>
+FTCPE_reg_count0: FTCPE port map (reg_count(0),'1',clk_counter,NOT start,'0');
+</td></tr><tr><td>
+FTCPE_reg_count1: FTCPE port map (reg_count(1),reg_count(0),clk_counter,NOT start,'0');
+</td></tr><tr><td>
+FTCPE_reg_count2: FTCPE port map (reg_count(2),reg_count_T(2),clk_counter,NOT start,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg_count_T(2) <= (reg_count(0) AND reg_count(1));
+</td></tr><tr><td>
+FTCPE_reg_count3: FTCPE port map (reg_count(3),reg_count_T(3),clk_counter,NOT start,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg_count_T(3) <= (reg_count(0) AND reg_count(1) AND reg_count(2));
+</td></tr><tr><td>
+FTCPE_reg_count4: FTCPE port map (reg_count(4),reg_count_T(4),clk_counter,NOT start,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg_count_T(4) <= (reg_count(0) AND reg_count(1) AND reg_count(2) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	reg_count(3));
+</td></tr><tr><td>
+FTCPE_reg_count5: FTCPE port map (reg_count(5),reg_count_T(5),clk_counter,NOT start,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg_count_T(5) <= (reg_count(4) AND reg_count(0) AND reg_count(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	reg_count(2) AND reg_count(3));
+</td></tr><tr><td>
+FTCPE_reg_count6: FTCPE port map (reg_count(6),reg_count_T(6),clk_counter,NOT start,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg_count_T(6) <= (reg_count(4) AND reg_count(0) AND reg_count(1) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	reg_count(2) AND reg_count(3) AND reg_count(5));
+</td></tr><tr><td>
+FTCPE_reg_count7: FTCPE port map (reg_count(7),reg_count_T(7),clk_counter,NOT start,'0');
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;reg_count_T(7) <= (reg_count(4) AND reg_count(6) AND reg_count(0) AND 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;	reg_count(1) AND reg_count(2) AND reg_count(3) AND reg_count(5));
+</td></tr><tr><td>
+FDCPE_reg_pwm0: FDCPE port map (reg_pwm(0),number(0),lach,'0','0',NOT start);
+</td></tr><tr><td>
+FDCPE_reg_pwm1: FDCPE port map (reg_pwm(1),number(1),lach,'0','0',NOT start);
+</td></tr><tr><td>
+FDCPE_reg_pwm2: FDCPE port map (reg_pwm(2),number(2),lach,'0','0',NOT start);
+</td></tr><tr><td>
+FDCPE_reg_pwm3: FDCPE port map (reg_pwm(3),number(3),lach,'0','0',NOT start);
+</td></tr><tr><td>
+FDCPE_reg_pwm4: FDCPE port map (reg_pwm(4),number(4),lach,'0','0',NOT start);
+</td></tr><tr><td>
+FDCPE_reg_pwm5: FDCPE port map (reg_pwm(5),number(5),lach,'0','0',NOT start);
+</td></tr><tr><td>
+FDCPE_reg_pwm6: FDCPE port map (reg_pwm(6),number(6),lach,'0','0',NOT start);
+</td></tr><tr><td>
+FDCPE_reg_pwm7: FDCPE port map (reg_pwm(7),number(7),lach,'0','0',NOT start);
+</td></tr><tr><td>
+Register Legend:
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FDCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; FTCPE (Q,D,C,CLR,PRE,CE); 
+<br/>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp; LDCP  (Q,D,G,CLR,PRE); 
+</td></tr><tr><td>
+</td></tr>
+</table>
+<form><span class="pgRef"><table width="90%" align="center"><tr>
+<td align="left"><input type="button" onclick="javascript:parent.leftnav.showTop()" onmouseover="window.status='goto top of page'; return true;" onmouseout="window.status=''" value="back to top"></td>
+<td align="right"><input type="button" onclick="window.print()" onmouseover="window.status='print page'; return true;" onmouseout="window.status=''" value="print page"></td>
+</tr></table></span></form>
+</body></html>

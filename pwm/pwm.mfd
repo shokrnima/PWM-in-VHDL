@@ -1,0 +1,393 @@
+MDF Database:  version 1.0
+MDF_INFO | pwm | XC9536XL-5-PC44
+MACROCELL | 1 | 10 | reg_count<4>
+ATTRIBUTES | 4367104 | 0
+OUTPUTMC | 9 | 1 | 8 | 1 | 9 | 1 | 7 | 1 | 17 | 1 | 2 | 1 | 0 | 1 | 1 | 1 | 15 | 1 | 16
+INPUTS | 4 | reg_count<0>  | reg_count<1>  | reg_count<2>  | reg_count<3>
+INPUTMC | 4 | 0 | 9 | 1 | 13 | 1 | 12 | 1 | 11
+EQ | 4 | 
+   reg_count<4>.T = reg_count<0> & reg_count<1> & reg_count<2> & 
+	reg_count<3>;
+   reg_count<4>.CLK = clk_counter;	// GCK
+   !reg_count<4>.AR = start;	// GSR
+GLOBALS | 2 | 2 | clk_counter | 4 | start
+
+MACROCELL | 1 | 8 | reg_count<6>
+ATTRIBUTES | 4367104 | 0
+OUTPUTMC | 6 | 1 | 7 | 1 | 17 | 1 | 0 | 1 | 1 | 1 | 15 | 1 | 16
+INPUTS | 6 | reg_count<4>  | reg_count<0>  | reg_count<1>  | reg_count<2>  | reg_count<3>  | reg_count<5>
+INPUTMC | 6 | 1 | 10 | 0 | 9 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 9
+EQ | 4 | 
+   reg_count<6>.T = reg_count<4> & reg_count<0> & reg_count<1> & 
+	reg_count<2> & reg_count<3> & reg_count<5>;
+   reg_count<6>.CLK = clk_counter;	// GCK
+   !reg_count<6>.AR = start;	// GSR
+GLOBALS | 2 | 2 | clk_counter | 4 | start
+
+MACROCELL | 0 | 9 | reg_count<0>
+ATTRIBUTES | 4367104 | 0
+OUTPUTMC | 9 | 1 | 10 | 1 | 8 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 9 | 1 | 7 | 1 | 2 | 1 | 3
+INPUTS | 0
+EQ | 3 | 
+   reg_count<0>.T = Vcc;
+   reg_count<0>.CLK = clk_counter;	// GCK
+   !reg_count<0>.AR = start;	// GSR
+GLOBALS | 2 | 2 | clk_counter | 4 | start
+
+MACROCELL | 1 | 13 | reg_count<1>
+ATTRIBUTES | 4367104 | 0
+OUTPUTMC | 8 | 1 | 10 | 1 | 8 | 1 | 12 | 1 | 11 | 1 | 9 | 1 | 7 | 1 | 2 | 1 | 3
+INPUTS | 1 | reg_count<0>
+INPUTMC | 1 | 0 | 9
+EQ | 3 | 
+   reg_count<1>.T = reg_count<0>;
+   reg_count<1>.CLK = clk_counter;	// GCK
+   !reg_count<1>.AR = start;	// GSR
+GLOBALS | 2 | 2 | clk_counter | 4 | start
+
+MACROCELL | 1 | 12 | reg_count<2>
+ATTRIBUTES | 4367104 | 0
+OUTPUTMC | 7 | 1 | 10 | 1 | 8 | 1 | 11 | 1 | 9 | 1 | 7 | 1 | 2 | 1 | 3
+INPUTS | 2 | reg_count<0>  | reg_count<1>
+INPUTMC | 2 | 0 | 9 | 1 | 13
+EQ | 3 | 
+   reg_count<2>.T = reg_count<0> & reg_count<1>;
+   reg_count<2>.CLK = clk_counter;	// GCK
+   !reg_count<2>.AR = start;	// GSR
+GLOBALS | 2 | 2 | clk_counter | 4 | start
+
+MACROCELL | 1 | 11 | reg_count<3>
+ATTRIBUTES | 4367104 | 0
+OUTPUTMC | 8 | 1 | 10 | 1 | 8 | 1 | 9 | 1 | 7 | 1 | 16 | 1 | 0 | 1 | 1 | 1 | 15
+INPUTS | 3 | reg_count<0>  | reg_count<1>  | reg_count<2>
+INPUTMC | 3 | 0 | 9 | 1 | 13 | 1 | 12
+EQ | 3 | 
+   reg_count<3>.T = reg_count<0> & reg_count<1> & reg_count<2>;
+   reg_count<3>.CLK = clk_counter;	// GCK
+   !reg_count<3>.AR = start;	// GSR
+GLOBALS | 2 | 2 | clk_counter | 4 | start
+
+MACROCELL | 1 | 9 | reg_count<5>
+ATTRIBUTES | 4367104 | 0
+OUTPUTMC | 5 | 1 | 8 | 1 | 7 | 1 | 17 | 1 | 15 | 1 | 16
+INPUTS | 5 | reg_count<4>  | reg_count<0>  | reg_count<1>  | reg_count<2>  | reg_count<3>
+INPUTMC | 5 | 1 | 10 | 0 | 9 | 1 | 13 | 1 | 12 | 1 | 11
+EQ | 4 | 
+   reg_count<5>.T = reg_count<4> & reg_count<0> & reg_count<1> & 
+	reg_count<2> & reg_count<3>;
+   reg_count<5>.CLK = clk_counter;	// GCK
+   !reg_count<5>.AR = start;	// GSR
+GLOBALS | 2 | 2 | clk_counter | 4 | start
+
+MACROCELL | 1 | 7 | reg_count<7>
+ATTRIBUTES | 4367104 | 0
+OUTPUTMC | 2 | 1 | 17 | 1 | 14
+INPUTS | 7 | reg_count<4>  | reg_count<6>  | reg_count<0>  | reg_count<1>  | reg_count<2>  | reg_count<3>  | reg_count<5>
+INPUTMC | 7 | 1 | 10 | 1 | 8 | 0 | 9 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 9
+EQ | 4 | 
+   reg_count<7>.T = reg_count<4> & reg_count<6> & reg_count<0> & 
+	reg_count<1> & reg_count<2> & reg_count<3> & reg_count<5>;
+   reg_count<7>.CLK = clk_counter;	// GCK
+   !reg_count<7>.AR = start;	// GSR
+GLOBALS | 2 | 2 | clk_counter | 4 | start
+
+MACROCELL | 0 | 13 | reg_pwm<4>
+ATTRIBUTES | 8553280 | 0
+OUTPUTMC | 6 | 1 | 17 | 1 | 2 | 1 | 0 | 1 | 1 | 1 | 15 | 1 | 16
+INPUTS | 2 | number<4>  | start
+INPUTP | 2 | 3 | 47
+EQ | 3 | 
+   reg_pwm<4>.D = number<4>;
+   reg_pwm<4>.CLK = lach;	// GCK
+   reg_pwm<4>.CE = !start;
+GLOBALS | 1 | 2 | lach
+
+MACROCELL | 0 | 11 | reg_pwm<6>
+ATTRIBUTES | 8553280 | 0
+OUTPUTMC | 5 | 1 | 17 | 1 | 0 | 1 | 1 | 1 | 15 | 1 | 16
+INPUTS | 2 | number<6>  | start
+INPUTP | 2 | 6 | 47
+EQ | 3 | 
+   reg_pwm<6>.D = number<6>;
+   reg_pwm<6>.CLK = lach;	// GCK
+   reg_pwm<6>.CE = !start;
+GLOBALS | 1 | 2 | lach
+
+MACROCELL | 0 | 10 | reg_pwm<7>
+ATTRIBUTES | 8553280 | 0
+OUTPUTMC | 2 | 1 | 17 | 1 | 14
+INPUTS | 2 | number<7>  | start
+INPUTP | 2 | 7 | 47
+EQ | 3 | 
+   reg_pwm<7>.D = number<7>;
+   reg_pwm<7>.CLK = lach;	// GCK
+   reg_pwm<7>.CE = !start;
+GLOBALS | 1 | 2 | lach
+
+MACROCELL | 0 | 16 | reg_pwm<1>
+ATTRIBUTES | 8553280 | 0
+OUTPUTMC | 2 | 1 | 2 | 1 | 3
+INPUTS | 2 | number<1>  | start
+INPUTP | 2 | 42 | 47
+EQ | 3 | 
+   reg_pwm<1>.D = number<1>;
+   reg_pwm<1>.CLK = lach;	// GCK
+   reg_pwm<1>.CE = !start;
+GLOBALS | 1 | 2 | lach
+
+MACROCELL | 0 | 15 | reg_pwm<2>
+ATTRIBUTES | 8553280 | 0
+OUTPUTMC | 2 | 1 | 2 | 1 | 3
+INPUTS | 2 | number<2>  | start
+INPUTP | 2 | 37 | 47
+EQ | 3 | 
+   reg_pwm<2>.D = number<2>;
+   reg_pwm<2>.CLK = lach;	// GCK
+   reg_pwm<2>.CE = !start;
+GLOBALS | 1 | 2 | lach
+
+MACROCELL | 0 | 14 | reg_pwm<3>
+ATTRIBUTES | 8553280 | 0
+OUTPUTMC | 4 | 1 | 16 | 1 | 0 | 1 | 1 | 1 | 15
+INPUTS | 2 | number<3>  | start
+INPUTP | 2 | 1 | 47
+EQ | 3 | 
+   reg_pwm<3>.D = number<3>;
+   reg_pwm<3>.CLK = lach;	// GCK
+   reg_pwm<3>.CE = !start;
+GLOBALS | 1 | 2 | lach
+
+MACROCELL | 0 | 12 | reg_pwm<5>
+ATTRIBUTES | 8553280 | 0
+OUTPUTMC | 4 | 1 | 17 | 1 | 0 | 1 | 1 | 1 | 15
+INPUTS | 2 | number<5>  | start
+INPUTP | 2 | 34 | 47
+EQ | 3 | 
+   reg_pwm<5>.D = number<5>;
+   reg_pwm<5>.CLK = lach;	// GCK
+   reg_pwm<5>.CE = !start;
+GLOBALS | 1 | 2 | lach
+
+MACROCELL | 1 | 17 | pwm_out
+ATTRIBUTES | 8561408 | 0
+OUTPUTMC | 1 | 1 | 1
+INPUTS | 11 | reg_count<7>  | reg_pwm<7>  | reg_count<6>  | reg_pwm<6>  | $OpTx$$OpTx$FX_DC$5_INV$175  | reg_count<5>  | reg_pwm<5>  | reg_count<4>  | reg_pwm<4>  | EXP4_.EXP  | EXP7_.EXP
+INPUTMC | 11 | 1 | 7 | 0 | 10 | 1 | 8 | 0 | 11 | 1 | 14 | 1 | 9 | 0 | 12 | 1 | 10 | 0 | 13 | 1 | 0 | 1 | 16
+IMPORTS | 2 | 1 | 0 | 1 | 16
+EQ | 53 | 
+   !pwm_out.D = reg_count<7> & !reg_pwm<7>
+	# reg_count<6> & !reg_pwm<6> & 
+	!$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<6> & reg_count<5> & !reg_pwm<5> & 
+	!$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<5> & !reg_pwm<6> & !reg_pwm<5> & 
+	!$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<4> & reg_count<6> & reg_count<5> & 
+	!reg_pwm<4> & !$OpTx$$OpTx$FX_DC$5_INV$175
+;Imported pterms FB2_1
+	# reg_count<4> & reg_count<6> & !reg_pwm<4> & 
+	!reg_pwm<5> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<4> & !reg_pwm<4> & !reg_pwm<6> & 
+	!reg_pwm<5> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<6> & reg_count<3> & !reg_pwm<5> & 
+	!$OpTx$INV$3 & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<6> & !reg_pwm<3> & !reg_pwm<5> & 
+	!$OpTx$INV$3 & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# !reg_pwm<6> & !reg_pwm<3> & !reg_pwm<5> & 
+	!$OpTx$INV$3 & !$OpTx$$OpTx$FX_DC$5_INV$175
+;Imported pterms FB2_2
+	# reg_count<4> & reg_count<6> & reg_count<3> & 
+	!reg_pwm<3> & !reg_pwm<5> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<4> & reg_count<3> & !reg_pwm<6> & 
+	!reg_pwm<3> & !reg_pwm<5> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<6> & reg_count<3> & !reg_pwm<4> & 
+	!reg_pwm<3> & !reg_pwm<5> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<3> & !reg_pwm<4> & !reg_pwm<6> & 
+	!reg_pwm<3> & !reg_pwm<5> & !$OpTx$$OpTx$FX_DC$5_INV$175
+;Imported pterms FB2_17
+	# reg_count<4> & reg_count<5> & !reg_pwm<4> & 
+	!reg_pwm<6> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<6> & reg_count<3> & reg_count<5> & 
+	!$OpTx$INV$3 & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<6> & reg_count<5> & !reg_pwm<3> & 
+	!$OpTx$INV$3 & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<3> & reg_count<5> & !reg_pwm<6> & 
+	!$OpTx$INV$3 & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<5> & !reg_pwm<6> & !reg_pwm<3> & 
+	!$OpTx$INV$3 & !$OpTx$$OpTx$FX_DC$5_INV$175
+;Imported pterms FB2_16
+	# reg_count<3> & !reg_pwm<6> & !reg_pwm<5> & 
+	!$OpTx$INV$3 & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<4> & reg_count<6> & reg_count<3> & 
+	reg_count<5> & !reg_pwm<3> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<4> & reg_count<3> & reg_count<5> & 
+	!reg_pwm<6> & !reg_pwm<3> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<6> & reg_count<3> & reg_count<5> & 
+	!reg_pwm<4> & !reg_pwm<3> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<3> & reg_count<5> & !reg_pwm<4> & 
+	!reg_pwm<6> & !reg_pwm<3> & !$OpTx$$OpTx$FX_DC$5_INV$175;
+   pwm_out.CLK = clk_counter;	// GCK
+   !pwm_out.AR = start;	// GSR
+GLOBALS | 2 | 2 | clk_counter | 4 | start
+
+MACROCELL | 0 | 17 | reg_pwm<0>
+ATTRIBUTES | 8553280 | 0
+OUTPUTMC | 2 | 1 | 2 | 1 | 3
+INPUTS | 2 | number<0>  | start
+INPUTP | 2 | 45 | 47
+EQ | 3 | 
+   reg_pwm<0>.D = number<0>;
+   reg_pwm<0>.CLK = lach;	// GCK
+   reg_pwm<0>.CE = !start;
+GLOBALS | 1 | 2 | lach
+
+MACROCELL | 1 | 1 | out_pwm_OBUF
+ATTRIBUTES | 264962 | 0
+OUTPUTMC | 1 | 1 | 0
+INPUTS | 10 | pwm_out  | select_source_laser  | reg_count<4>  | reg_count<6>  | reg_count<3>  | reg_pwm<3>  | reg_pwm<5>  | $OpTx$$OpTx$FX_DC$5_INV$175  | reg_pwm<6>  | reg_pwm<4>
+INPUTMC | 9 | 1 | 17 | 1 | 10 | 1 | 8 | 1 | 11 | 0 | 14 | 0 | 12 | 1 | 14 | 0 | 11 | 0 | 13
+INPUTP | 1 | 44
+EXPORTS | 1 | 1 | 0
+EQ | 9 | 
+   !out_pwm = !pwm_out & select_source_laser;
+    out_pwm_OBUF.EXP  =  reg_count<4> & reg_count<6> & reg_count<3> & 
+	!reg_pwm<3> & !reg_pwm<5> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<4> & reg_count<3> & !reg_pwm<6> & 
+	!reg_pwm<3> & !reg_pwm<5> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<6> & reg_count<3> & !reg_pwm<4> & 
+	!reg_pwm<3> & !reg_pwm<5> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<3> & !reg_pwm<4> & !reg_pwm<6> & 
+	!reg_pwm<3> & !reg_pwm<5> & !$OpTx$$OpTx$FX_DC$5_INV$175
+
+MACROCELL | 1 | 2 | $OpTx$INV$3
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 3 | 1 | 16 | 1 | 0 | 1 | 15
+INPUTS | 9 | reg_count<2>  | reg_pwm<2>  | reg_count<4>  | reg_pwm<4>  | reg_count<1>  | reg_pwm<1>  | reg_count<0>  | reg_pwm<0>  | EXP5_.EXP
+INPUTMC | 9 | 1 | 12 | 0 | 15 | 1 | 10 | 0 | 13 | 1 | 13 | 0 | 16 | 0 | 9 | 0 | 17 | 1 | 3
+IMPORTS | 1 | 1 | 3
+EQ | 13 | 
+   $OpTx$INV$3 = !reg_count<4> & reg_pwm<4>
+	# !reg_count<2> & reg_pwm<2>
+	# !reg_count<1> & !reg_count<2> & reg_pwm<1>
+	# !reg_count<1> & reg_pwm<1> & reg_pwm<2>
+	# !reg_count<0> & !reg_count<1> & !reg_count<2> & 
+	reg_pwm<0>
+;Imported pterms FB2_4
+	# !reg_count<0> & !reg_count<1> & reg_pwm<2> & 
+	reg_pwm<0>
+	# !reg_count<0> & !reg_count<2> & reg_pwm<1> & 
+	reg_pwm<0>
+	# !reg_count<0> & reg_pwm<1> & reg_pwm<2> & 
+	reg_pwm<0>;
+
+MACROCELL | 1 | 14 | $OpTx$$OpTx$FX_DC$5_INV$175
+ATTRIBUTES | 133888 | 0
+OUTPUTMC | 5 | 1 | 17 | 1 | 0 | 1 | 1 | 1 | 15 | 1 | 16
+INPUTS | 2 | reg_count<7>  | reg_pwm<7>
+INPUTMC | 2 | 1 | 7 | 0 | 10
+EQ | 1 | 
+   $OpTx$$OpTx$FX_DC$5_INV$175 = !reg_count<7> & reg_pwm<7>;
+
+MACROCELL | 1 | 0 | EXP4_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 17
+INPUTS | 10 | reg_count<4>  | reg_count<6>  | reg_pwm<4>  | reg_pwm<5>  | $OpTx$$OpTx$FX_DC$5_INV$175  | reg_pwm<6>  | reg_count<3>  | $OpTx$INV$3  | reg_pwm<3>  | out_pwm_OBUF.EXP
+INPUTMC | 10 | 1 | 10 | 1 | 8 | 0 | 13 | 0 | 12 | 1 | 14 | 0 | 11 | 1 | 11 | 1 | 2 | 0 | 14 | 1 | 1
+EXPORTS | 1 | 1 | 17
+IMPORTS | 1 | 1 | 1
+EQ | 19 | 
+       EXP4_.EXP  =  reg_count<4> & reg_count<6> & !reg_pwm<4> & 
+	!reg_pwm<5> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<4> & !reg_pwm<4> & !reg_pwm<6> & 
+	!reg_pwm<5> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<6> & reg_count<3> & !reg_pwm<5> & 
+	!$OpTx$INV$3 & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<6> & !reg_pwm<3> & !reg_pwm<5> & 
+	!$OpTx$INV$3 & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# !reg_pwm<6> & !reg_pwm<3> & !reg_pwm<5> & 
+	!$OpTx$INV$3 & !$OpTx$$OpTx$FX_DC$5_INV$175
+;Imported pterms FB2_2
+	# reg_count<4> & reg_count<6> & reg_count<3> & 
+	!reg_pwm<3> & !reg_pwm<5> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<4> & reg_count<3> & !reg_pwm<6> & 
+	!reg_pwm<3> & !reg_pwm<5> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<6> & reg_count<3> & !reg_pwm<4> & 
+	!reg_pwm<3> & !reg_pwm<5> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<3> & !reg_pwm<4> & !reg_pwm<6> & 
+	!reg_pwm<3> & !reg_pwm<5> & !$OpTx$$OpTx$FX_DC$5_INV$175
+
+MACROCELL | 1 | 3 | EXP5_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 2
+INPUTS | 6 | reg_count<0>  | reg_count<1>  | reg_pwm<2>  | reg_pwm<0>  | reg_count<2>  | reg_pwm<1>
+INPUTMC | 6 | 0 | 9 | 1 | 13 | 0 | 15 | 0 | 17 | 1 | 12 | 0 | 16
+EXPORTS | 1 | 1 | 2
+EQ | 6 | 
+       EXP5_.EXP  =  !reg_count<0> & !reg_count<1> & reg_pwm<2> & 
+	reg_pwm<0>
+	# !reg_count<0> & !reg_count<2> & reg_pwm<1> & 
+	reg_pwm<0>
+	# !reg_count<0> & reg_pwm<1> & reg_pwm<2> & 
+	reg_pwm<0>
+
+MACROCELL | 1 | 15 | EXP6_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 16
+INPUTS | 10 | reg_count<3>  | reg_pwm<6>  | reg_pwm<5>  | $OpTx$INV$3  | $OpTx$$OpTx$FX_DC$5_INV$175  | reg_count<4>  | reg_count<6>  | reg_count<5>  | reg_pwm<3>  | reg_pwm<4>
+INPUTMC | 10 | 1 | 11 | 0 | 11 | 0 | 12 | 1 | 2 | 1 | 14 | 1 | 10 | 1 | 8 | 1 | 9 | 0 | 14 | 0 | 13
+EXPORTS | 1 | 1 | 16
+EQ | 10 | 
+       EXP6_.EXP  =  reg_count<3> & !reg_pwm<6> & !reg_pwm<5> & 
+	!$OpTx$INV$3 & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<4> & reg_count<6> & reg_count<3> & 
+	reg_count<5> & !reg_pwm<3> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<4> & reg_count<3> & reg_count<5> & 
+	!reg_pwm<6> & !reg_pwm<3> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<6> & reg_count<3> & reg_count<5> & 
+	!reg_pwm<4> & !reg_pwm<3> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<3> & reg_count<5> & !reg_pwm<4> & 
+	!reg_pwm<6> & !reg_pwm<3> & !$OpTx$$OpTx$FX_DC$5_INV$175
+
+MACROCELL | 1 | 16 | EXP7_
+ATTRIBUTES | 2048 | 0
+OUTPUTMC | 1 | 1 | 17
+INPUTS | 10 | reg_count<4>  | reg_count<5>  | reg_pwm<4>  | reg_pwm<6>  | $OpTx$$OpTx$FX_DC$5_INV$175  | reg_count<6>  | reg_count<3>  | $OpTx$INV$3  | reg_pwm<3>  | EXP6_.EXP
+INPUTMC | 10 | 1 | 10 | 1 | 9 | 0 | 13 | 0 | 11 | 1 | 14 | 1 | 8 | 1 | 11 | 1 | 2 | 0 | 14 | 1 | 15
+EXPORTS | 1 | 1 | 17
+IMPORTS | 1 | 1 | 15
+EQ | 21 | 
+       EXP7_.EXP  =  reg_count<4> & reg_count<5> & !reg_pwm<4> & 
+	!reg_pwm<6> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<6> & reg_count<3> & reg_count<5> & 
+	!$OpTx$INV$3 & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<6> & reg_count<5> & !reg_pwm<3> & 
+	!$OpTx$INV$3 & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<3> & reg_count<5> & !reg_pwm<6> & 
+	!$OpTx$INV$3 & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<5> & !reg_pwm<6> & !reg_pwm<3> & 
+	!$OpTx$INV$3 & !$OpTx$$OpTx$FX_DC$5_INV$175
+;Imported pterms FB2_16
+	# reg_count<3> & !reg_pwm<6> & !reg_pwm<5> & 
+	!$OpTx$INV$3 & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<4> & reg_count<6> & reg_count<3> & 
+	reg_count<5> & !reg_pwm<3> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<4> & reg_count<3> & reg_count<5> & 
+	!reg_pwm<6> & !reg_pwm<3> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<6> & reg_count<3> & reg_count<5> & 
+	!reg_pwm<4> & !reg_pwm<3> & !$OpTx$$OpTx$FX_DC$5_INV$175
+	# reg_count<3> & reg_count<5> & !reg_pwm<4> & 
+	!reg_pwm<6> & !reg_pwm<3> & !$OpTx$$OpTx$FX_DC$5_INV$175
+
+PIN | clk_counter | 4096 | 0 | N/A | 10 | 9 | 1 | 10 | 1 | 8 | 0 | 9 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 9 | 1 | 7 | 1 | 17
+PIN | start | 65600 | 0 | N/A | 47 | 17 | 0 | 13 | 0 | 11 | 0 | 10 | 0 | 16 | 0 | 15 | 0 | 14 | 0 | 12 | 0 | 17 | 1 | 10 | 1 | 8 | 0 | 9 | 1 | 13 | 1 | 12 | 1 | 11 | 1 | 9 | 1 | 7 | 1 | 17
+PIN | number<4> | 64 | 0 | N/A | 3 | 1 | 0 | 13
+PIN | lach | 8192 | 0 | N/A | 11 | 8 | 0 | 13 | 0 | 11 | 0 | 10 | 0 | 16 | 0 | 15 | 0 | 14 | 0 | 12 | 0 | 17
+PIN | number<6> | 64 | 0 | N/A | 6 | 1 | 0 | 11
+PIN | number<7> | 64 | 0 | N/A | 7 | 1 | 0 | 10
+PIN | number<1> | 64 | 0 | N/A | 42 | 1 | 0 | 16
+PIN | number<2> | 64 | 0 | N/A | 37 | 1 | 0 | 15
+PIN | number<3> | 64 | 0 | N/A | 1 | 1 | 0 | 14
+PIN | number<5> | 64 | 0 | N/A | 34 | 1 | 0 | 12
+PIN | number<0> | 64 | 0 | N/A | 45 | 1 | 0 | 17
+PIN | select_source_laser | 64 | 0 | N/A | 44 | 1 | 1 | 1
+PIN | out_pwm | 536871040 | 0 | N/A | 5
