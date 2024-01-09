@@ -1,1 +1,1 @@
--intstyle "ise" -incremental -o "C:/Users/Nima/Desktop/pwm/pwm/pwm_isim_beh.exe" -prj "C:/Users/Nima/Desktop/pwm/pwm/pwm_beh.prj" "work.pwm" 
+-intstyle "ise" -incremental -o "C:/Users/Nima/Desktop/PP/pwm/pwm_isim_beh.exe" -prj "C:/Users/Nima/Desktop/PP/pwm/pwm_beh.prj" "work.pwm" 

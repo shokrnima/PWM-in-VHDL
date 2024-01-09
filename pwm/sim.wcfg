@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<wave_config>
+   <wave_state>
+   </wave_state>
+   <db_ref_list>
+      <db_ref path="C:/Users/Nima/Desktop/PP/pwm/pwm_isim_beh.wdb" id="1" type="auto">
+         <top_modules>
+            <top_module name="pwm" />
+            <top_module name="std_logic_1164" />
+            <top_module name="std_logic_arith" />
+            <top_module name="std_logic_unsigned" />
+         </top_modules>
+      </db_ref>
+   </db_ref_list>
+   <WVObjectSize size="8" />
+   <wvobject fp_name="/pwm/number" type="array" db_ref_id="1">
+      <obj_property name="DisplayName">label</obj_property>
+      <obj_property name="ElementShortName">number[7:0]</obj_property>
+      <obj_property name="ObjectShortName">number[7:0]</obj_property>
+      <obj_property name="label">number[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pwm/lach" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">lach</obj_property>
+      <obj_property name="ObjectShortName">lach</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pwm/clk_counter" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">clk_counter</obj_property>
+      <obj_property name="ObjectShortName">clk_counter</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pwm/start" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">start</obj_property>
+      <obj_property name="ObjectShortName">start</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pwm/out_pwm" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">out_pwm</obj_property>
+      <obj_property name="ObjectShortName">out_pwm</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pwm/reg_count" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_count[7:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_count[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pwm/reg_pwm" type="array" db_ref_id="1">
+      <obj_property name="ElementShortName">reg_pwm[7:0]</obj_property>
+      <obj_property name="ObjectShortName">reg_pwm[7:0]</obj_property>
+   </wvobject>
+   <wvobject fp_name="/pwm/pwm_out" type="logic" db_ref_id="1">
+      <obj_property name="ElementShortName">pwm_out</obj_property>
+      <obj_property name="ObjectShortName">pwm_out</obj_property>
+   </wvobject>
+</wave_config>

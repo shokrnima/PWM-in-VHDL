@@ -35,7 +35,6 @@ entity pwm is
            lach : in  STD_LOGIC;
            clk_counter : in  STD_LOGIC;
            start : in  STD_LOGIC;
-		   select_source_laser : in  STD_LOGIC;
            out_pwm : out  STD_LOGIC);
 end pwm;
 
@@ -43,39 +42,30 @@ architecture Behavioral of pwm is
 	signal reg_count : std_logic_vector(7 downto 0) := "00000000";
 	signal reg_pwm : std_logic_vector(7 downto 0):= "00000000";
 	signal pwm_out :STD_LOGIC;
-	signal test : STD_LOGIC;
-begin
+begin	
 	process (lach,clk_counter,start)
 		begin
 			if (start = '1') then
 				if (rising_edge(clk_counter))then
 					reg_count <= reg_count + '1';
+						  if (reg_count > 193) then
+								reg_count <= "00000000";
+						  end if;
                     if (reg_count >= reg_pwm) then
                         pwm_out <= '0';
                     else
-						pwm_out <= '1';
+								pwm_out <= '1';
                     end if;
 				end if;
+				out_pwm <= pwm_out;
 			elsif (start = '0') then
 				 reg_count <= "00000000";
            		 pwm_out <= '0';
+				 out_pwm <= '0';
 				if (rising_edge(lach))then
 					reg_pwm <= number;
 				end if;
 			end if;
-		end process;
-		process (select_source_laser)
-			begin
-				if (select_source_laser = '1') then
-					out_pwm <= pwm_out;
-				else
-					out_pwm <= test;
-				end if;	
-
-		end process;
-		process (select_source_laser)
-			begin
-				test <= '1';	   
 		end process;
 end Behavioral;
 

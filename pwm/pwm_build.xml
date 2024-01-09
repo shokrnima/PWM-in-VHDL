@@ -5,7 +5,7 @@
 <design name='pwm'/>
 <rptdir name='pwm'/>
 <xilinx path='C:/Xilinx/14.7/ISE_DS/ISE;'/>
-<projDir path='C:\Users\Nima\Desktop\pwm\pwm'/>
+<projDir path='C:\Users\Nima\Desktop\PP\pwm'/>
 <xslDir path='chipviewer/data/xsl'/>
 <fileDir path='/chipviewer/data/html'/>
 <dataFile file='index.htm'/>
@@ -175,18 +175,42 @@
     <param name='legendOn' value='1'/>
     <output file='fbs_FB1.htm'/>
     <param name='fb' value='FB2'/>
-    <param name='type' value='2'/>
+    <param name='type' value='3'/>
     <param name='legendOn' value='1'/>
     <output file='fbs_FB2.htm'/>
+    <param name='fb' value='FB3'/>
+    <param name='type' value='3'/>
+    <param name='legendOn' value='1'/>
+    <output file='fbs_FB3.htm'/>
+    <param name='fb' value='FB4'/>
+    <param name='type' value='3'/>
+    <param name='legendOn' value='1'/>
+    <output file='fbs_FB4.htm'/>
+    <param name='fb' value='FB5'/>
+    <param name='type' value='3'/>
+    <param name='legendOn' value='1'/>
+    <output file='fbs_FB5.htm'/>
+    <param name='fb' value='FB6'/>
+    <param name='type' value='3'/>
+    <param name='legendOn' value='1'/>
+    <output file='fbs_FB6.htm'/>
+    <param name='fb' value='FB7'/>
+    <param name='type' value='3'/>
+    <param name='legendOn' value='1'/>
+    <output file='fbs_FB7.htm'/>
+    <param name='fb' value='FB8'/>
+    <param name='type' value='2'/>
+    <param name='legendOn' value='1'/>
+    <output file='fbs_FB8.htm'/>
   </xslFile>
 </xmlFile>
 <xmlFile file='C:/Xilinx/14.7/ISE_DS/ISE/chipviewer/data/xsl/pinlegend.xml'>
   <xslFile file='legend.xsl'>
-    <param name='device' value='XC9536XL-5-PC44'/>
+    <param name='device' value='XC95144XL-5-TQ100'/>
     <param name='verOn' value='0'/>
     <param name='linkName' value='pinlegendV.htm'/>
     <output file='pinlegend.htm'/>
-    <param name='device' value='XC9536XL-5-PC44'/>
+    <param name='device' value='XC95144XL-5-TQ100'/>
     <param name='verOn' value='1'/>
     <param name='linkName' value='pinlegend.htm'/>
     <output file='pinlegendV.htm'/>
@@ -194,11 +218,11 @@
 </xmlFile>
 <xmlFile file='C:/Xilinx/14.7/ISE_DS/ISE/chipviewer/data/xsl/logiclegend.xml'>
   <xslFile file='legend.xsl'>
-    <param name='device' value='XC9536XL-5-PC44'/>
+    <param name='device' value='XC95144XL-5-TQ100'/>
     <param name='verOn' value='0'/>
     <param name='linkName' value='logiclegendV.htm'/>
     <output file='logiclegend.htm'/>
-    <param name='device' value='XC9536XL-5-PC44'/>
+    <param name='device' value='XC95144XL-5-TQ100'/>
     <param name='verOn' value='1'/>
     <param name='linkName' value='logiclegend.htm'/>
     <output file='logiclegendV.htm'/>

@@ -114,3 +114,164 @@ cpldfit -intstyle ise -p xc95*xl-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on
 XSLTProcess pwm_build.xml 
 tsim -intstyle ise pwm pwm.nga 
 hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc9500xl pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95*xl-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc9500xl pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95*xl-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc9500xl pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95*xl-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc9500xl pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95*xl-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc9500xl pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95*xl-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc9500xl pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95*xl-*-* -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc95144xl-TQ100-5 pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95144xl-5-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc95144xl-TQ100-5 pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95144xl-5-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc95144xl-TQ100-5 pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95144xl-5-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc95144xl-TQ100-5 pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95144xl-5-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc95144xl-TQ100-5 pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95144xl-5-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc95144xl-TQ100-5 pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95144xl-5-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc95144xl-TQ100-5 pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95144xl-5-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc95144xl-TQ100-5 pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95144xl-5-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc95144xl-TQ100-5 pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95144xl-5-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc95144xl-TQ100-5 pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95144xl-5-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc95144xl-TQ100-5 pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95144xl-5-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc95144xl-TQ100-5 pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95144xl-5-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc95144xl-TQ100-5 pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95144xl-5-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc95144xl-TQ100-5 pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95144xl-5-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc95144xl-TQ100-5 pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95144xl-5-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc95144xl-TQ100-5 pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95144xl-5-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc95144xl-TQ100-5 pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95144xl-5-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc95144xl-TQ100-5 pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95144xl-5-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc95144xl-TQ100-5 pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95144xl-5-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 
+xst -intstyle ise -ifn "C:/Users/Nima/Desktop/PP/pwm/pwm.xst" -ofn "C:/Users/Nima/Desktop/PP/pwm/pwm.syr" 
+ngdbuild -intstyle ise -dd _ngo -uc pwm.ucf -p xc95144xl-TQ100-5 pwm.ngc pwm.ngd  
+cpldfit -intstyle ise -p xc95144xl-5-TQ100 -ofmt vhdl -optimize speed -htmlrpt -loc on -slew fast -init low -inputs 54 -pterms 25 -unused float -power std -terminate keeper pwm.ngd 
+XSLTProcess pwm_build.xml 
+tsim -intstyle ise pwm pwm.nga 
+hprep6 -s IEEE1149 -n pwm -i pwm 

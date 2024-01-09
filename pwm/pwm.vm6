@@ -1,1171 +1,1375 @@
 NDS Database:  version P.20131013
 
-NDS_INFO | xc9500xl | 9536XL44PC | XC9536XL-5-PC44
+NDS_INFO | xc9500xl | 95144XL100 | XC95144XL-5-TQ100
 
-DEVICE | 9536XL | 9536XL44PC | 
+DEVICE | 95144XL | 95144XL100 | 
 
 NETWORK | pwm | 0 | 0 | 16391
 
 INPUT_INSTANCE | 0 | 0 | NULL | clk_counter_IBUF | pwm_COPY_0_COPY_0 | 16 | 1 | 1
 INPUT_NODE_TYPE | 0 | 5 | II_IN
-NODE | clk_counter | 1386 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+NODE | clk_counter | 1554 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
 OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
-NODE | FCLKIO_0 | 1352 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_0 | 1521 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
 
 INPUT_INSTANCE | 0 | 0 | NULL | start_IBUF | pwm_COPY_0_COPY_0 | 16 | 1 | 2
 INPUT_NODE_TYPE | 0 | 5 | II_IN
-NODE | start | 1387 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+NODE | start | 1555 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
 OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
-NODE | start_IBUF | 1353 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
+NODE | start_IBUF | 1522 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
 OUTPUT_NODE_TYPE | 9 | 5 | II_FSRINV
-NODE | FSR-IO_2 | 1354 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
+NODE | FSR-IO_2 | 1523 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
 
-MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | reg_count<4> | pwm_COPY_0_COPY_0 | 2155877376 | 6 | 1
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | reg_count<4> | pwm_COPY_0_COPY_0 | 2155877376 | 9 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<0> | 1357 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<1> | 1358 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<2> | 1359 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<3> | 1360 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FCLKIO_0 | 1352 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FSR-IO_2 | 1354 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 1521 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSR-IO_2 | 1523 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
 OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
-NODE | reg_count<4> | 1355 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
 
-SIGNAL_INSTANCE | reg_count<4>.SI | reg_count<4> | 0 | 4 | 2
+SIGNAL_INSTANCE | reg_count<4>.SI | reg_count<4> | 0 | 7 | 2
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<0> | 1357 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<1> | 1358 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<2> | 1359 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<3> | 1360 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
 OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
-SIGNAL | NODE | reg_count<4>.D1 | 1399 | ? | 0 | 0 | reg_count<4> | NULL | NULL | reg_count<4>.SI | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | reg_count<4>.D1 | 1566 | ? | 0 | 4096 | reg_count<4> | NULL | NULL | reg_count<4>.SI | 1 | 9 | MC_SI_D1
 SPPTERM | 0 | IV_ZERO
 OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
-SIGNAL | NODE | reg_count<4>.D2 | 1400 | ? | 0 | 4096 | reg_count<4> | NULL | NULL | reg_count<4>.SI | 2 | 9 | MC_SI_D2
-SPPTERM | 4 | IV_TRUE | reg_count<0> | IV_TRUE | reg_count<1> | IV_TRUE | reg_count<2> | IV_TRUE | reg_count<3>
+SIGNAL | NODE | reg_count<4>.D2 | 1567 | ? | 0 | 4096 | reg_count<4> | NULL | NULL | reg_count<4>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<7>
+SPPTERM | 5 | IV_FALSE | reg_count<6> | IV_TRUE | reg_count<1> | IV_TRUE | reg_count<2> | IV_TRUE | reg_count<3> | IV_TRUE | reg_count<0>
+SPPTERM | 5 | IV_TRUE | reg_count<1> | IV_TRUE | reg_count<2> | IV_TRUE | reg_count<3> | IV_FALSE | reg_count<7> | IV_TRUE | reg_count<0>
 
 SRFF_INSTANCE | reg_count<4>.REG | reg_count<4> | 0 | 3 | 1
 INPUT_NODE_TYPE | 0 | 8 | SRFF_D
-NODE | reg_count<4>.D | 1398 | ? | 0 | 0 | reg_count<4> | NULL | NULL | reg_count<4>.XOR | 0 | 7 | ALU_F
+NODE | reg_count<4>.D | 1565 | ? | 0 | 0 | reg_count<4> | NULL | NULL | reg_count<4>.XOR | 0 | 7 | ALU_F
 INPUT_NODE_TYPE | 1 | 8 | SRFF_C
-NODE | FCLKIO_0 | 1352 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_0 | 1521 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
 INPUT_NODE_TYPE | 3 | 8 | SRFF_R
-NODE | FSR-IO_2 | 1354 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
+NODE | FSR-IO_2 | 1523 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
 OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
-NODE | reg_count<4>.Q | 1401 | ? | 0 | 0 | reg_count<4> | NULL | NULL | reg_count<4>.REG | 0 | 8 | SRFF_Q
+NODE | reg_count<4>.Q | 1568 | ? | 0 | 0 | reg_count<4> | NULL | NULL | reg_count<4>.REG | 0 | 8 | SRFF_Q
 
-MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | reg_count<6> | pwm_COPY_0_COPY_0 | 2155877376 | 8 | 1
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | reg_count<6> | pwm_COPY_0_COPY_0 | 2155877376 | 11 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<4> | 1355 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<0> | 1357 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<1> | 1358 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<2> | 1359 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<3> | 1360 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+NODE | reg_count<5> | 1529 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<5> | 1361 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FCLKIO_0 | 1352 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FSR-IO_2 | 1354 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 1521 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSR-IO_2 | 1523 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<1>.EXP | 1654 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.EXP | reg_count<1> | 4 | 0 | MC_EXPORT
 OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
-NODE | reg_count<6> | 1356 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
 
-SIGNAL_INSTANCE | reg_count<6>.SI | reg_count<6> | 0 | 6 | 2
+SIGNAL_INSTANCE | reg_count<6>.SI | reg_count<6> | 0 | 9 | 2
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<4> | 1355 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<0> | 1357 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<1> | 1358 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<2> | 1359 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<3> | 1360 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+NODE | reg_count<5> | 1529 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<5> | 1361 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<1>.EXP | 1654 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.EXP | reg_count<1> | 4 | 0 | MC_EXPORT
 OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
-SIGNAL | NODE | reg_count<6>.D1 | 1403 | ? | 0 | 0 | reg_count<6> | NULL | NULL | reg_count<6>.SI | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | reg_count<6>.D1 | 1570 | ? | 0 | 4096 | reg_count<6> | NULL | NULL | reg_count<6>.SI | 1 | 9 | MC_SI_D1
 SPPTERM | 0 | IV_ZERO
 OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
-SIGNAL | NODE | reg_count<6>.D2 | 1404 | ? | 0 | 4096 | reg_count<6> | NULL | NULL | reg_count<6>.SI | 2 | 9 | MC_SI_D2
-SPPTERM | 6 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<0> | IV_TRUE | reg_count<1> | IV_TRUE | reg_count<2> | IV_TRUE | reg_count<3> | IV_TRUE | reg_count<5>
+SIGNAL | NODE | reg_count<6>.D2 | 1571 | ? | 0 | 4096 | reg_count<6> | NULL | NULL | reg_count<6>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | reg_count<1>.EXP
+SPPTERM | 3 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<7>
+SPPTERM | 3 | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<1> | IV_TRUE | reg_count<7>
+SPPTERM | 3 | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<2> | IV_TRUE | reg_count<7>
+SPPTERM | 3 | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<3> | IV_TRUE | reg_count<7>
+SPPTERM | 6 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<1> | IV_TRUE | reg_count<2> | IV_TRUE | reg_count<3> | IV_TRUE | reg_count<5> | IV_TRUE | reg_count<0>
 
 SRFF_INSTANCE | reg_count<6>.REG | reg_count<6> | 0 | 3 | 1
 INPUT_NODE_TYPE | 0 | 8 | SRFF_D
-NODE | reg_count<6>.D | 1402 | ? | 0 | 0 | reg_count<6> | NULL | NULL | reg_count<6>.XOR | 0 | 7 | ALU_F
+NODE | reg_count<6>.D | 1569 | ? | 0 | 0 | reg_count<6> | NULL | NULL | reg_count<6>.XOR | 0 | 7 | ALU_F
 INPUT_NODE_TYPE | 1 | 8 | SRFF_C
-NODE | FCLKIO_0 | 1352 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_0 | 1521 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
 INPUT_NODE_TYPE | 3 | 8 | SRFF_R
-NODE | FSR-IO_2 | 1354 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
+NODE | FSR-IO_2 | 1523 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
 OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
-NODE | reg_count<6>.Q | 1405 | ? | 0 | 0 | reg_count<6> | NULL | NULL | reg_count<6>.REG | 0 | 8 | SRFF_Q
+NODE | reg_count<6>.Q | 1572 | ? | 0 | 0 | reg_count<6> | NULL | NULL | reg_count<6>.REG | 0 | 8 | SRFF_Q
 
-MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | reg_count<0> | pwm_COPY_0_COPY_0 | 2155877376 | 2 | 1
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | reg_count<1> | pwm_COPY_0_COPY_0 | 2155877376 | 10 | 2
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FCLKIO_0 | 1352 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FSR-IO_2 | 1354 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<5> | 1529 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 1521 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSR-IO_2 | 1523 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
 OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
-NODE | reg_count<0> | 1357 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | reg_count<1>.EXP | 1654 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.EXP | reg_count<1> | 4 | 0 | MC_EXPORT
 
-SIGNAL_INSTANCE | reg_count<0>.SI | reg_count<0> | 0 | 0 | 2
+SIGNAL_INSTANCE | reg_count<1>.SI | reg_count<1> | 0 | 8 | 3
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<5> | 1529 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
 OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
-SIGNAL | NODE | reg_count<0>.D1 | 1407 | ? | 0 | 4096 | reg_count<0> | NULL | NULL | reg_count<0>.SI | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | reg_count<1>.D1 | 1574 | ? | 0 | 4096 | reg_count<1> | NULL | NULL | reg_count<1>.SI | 1 | 9 | MC_SI_D1
 SPPTERM | 0 | IV_ZERO
 OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
-SIGNAL | NODE | reg_count<0>.D2 | 1408 | ? | 0 | 4096 | reg_count<0> | NULL | NULL | reg_count<0>.SI | 2 | 9 | MC_SI_D2
-SPPTERM | 0 | IV_DC
-
-SRFF_INSTANCE | reg_count<0>.REG | reg_count<0> | 0 | 3 | 1
-INPUT_NODE_TYPE | 0 | 8 | SRFF_D
-NODE | reg_count<0>.D | 1406 | ? | 0 | 0 | reg_count<0> | NULL | NULL | reg_count<0>.XOR | 0 | 7 | ALU_F
-INPUT_NODE_TYPE | 1 | 8 | SRFF_C
-NODE | FCLKIO_0 | 1352 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
-INPUT_NODE_TYPE | 3 | 8 | SRFF_R
-NODE | FSR-IO_2 | 1354 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
-OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
-NODE | reg_count<0>.Q | 1409 | ? | 0 | 0 | reg_count<0> | NULL | NULL | reg_count<0>.REG | 0 | 8 | SRFF_Q
-
-MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | reg_count<1> | pwm_COPY_0_COPY_0 | 2155877376 | 3 | 1
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<0> | 1357 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FCLKIO_0 | 1352 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FSR-IO_2 | 1354 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
-OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
-NODE | reg_count<1> | 1358 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
-
-SIGNAL_INSTANCE | reg_count<1>.SI | reg_count<1> | 0 | 1 | 2
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<0> | 1357 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
-OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
-SIGNAL | NODE | reg_count<1>.D1 | 1411 | ? | 0 | 0 | reg_count<1> | NULL | NULL | reg_count<1>.SI | 1 | 9 | MC_SI_D1
-SPPTERM | 0 | IV_ZERO
-OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
-SIGNAL | NODE | reg_count<1>.D2 | 1412 | ? | 0 | 4096 | reg_count<1> | NULL | NULL | reg_count<1>.SI | 2 | 9 | MC_SI_D2
-SPPTERM | 1 | IV_TRUE | reg_count<0>
+SIGNAL | NODE | reg_count<1>.D2 | 1575 | ? | 0 | 4096 | reg_count<1> | NULL | NULL | reg_count<1>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | reg_count<6> | IV_TRUE | reg_count<0>
+SPPTERM | 2 | IV_FALSE | reg_count<7> | IV_TRUE | reg_count<0>
+SPPTERM | 3 | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<1> | IV_TRUE | reg_count<7>
+SPPTERM | 5 | IV_FALSE | reg_count<4> | IV_FALSE | reg_count<2> | IV_FALSE | reg_count<3> | IV_FALSE | reg_count<5> | IV_TRUE | reg_count<0>
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | reg_count<1>.EXP | 1653 | ? | 0 | 0 | reg_count<1> | NULL | NULL | reg_count<1>.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 3 | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<5> | IV_TRUE | reg_count<7>
 
 SRFF_INSTANCE | reg_count<1>.REG | reg_count<1> | 0 | 3 | 1
 INPUT_NODE_TYPE | 0 | 8 | SRFF_D
-NODE | reg_count<1>.D | 1410 | ? | 0 | 0 | reg_count<1> | NULL | NULL | reg_count<1>.XOR | 0 | 7 | ALU_F
+NODE | reg_count<1>.D | 1573 | ? | 0 | 0 | reg_count<1> | NULL | NULL | reg_count<1>.XOR | 0 | 7 | ALU_F
 INPUT_NODE_TYPE | 1 | 8 | SRFF_C
-NODE | FCLKIO_0 | 1352 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_0 | 1521 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
 INPUT_NODE_TYPE | 3 | 8 | SRFF_R
-NODE | FSR-IO_2 | 1354 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
+NODE | FSR-IO_2 | 1523 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
 OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
-NODE | reg_count<1>.Q | 1413 | ? | 0 | 0 | reg_count<1> | NULL | NULL | reg_count<1>.REG | 0 | 8 | SRFF_Q
+NODE | reg_count<1>.Q | 1576 | ? | 0 | 0 | reg_count<1> | NULL | NULL | reg_count<1>.REG | 0 | 8 | SRFF_Q
 
-MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | reg_count<2> | pwm_COPY_0_COPY_0 | 2155877376 | 4 | 1
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | reg_count<2> | pwm_COPY_0_COPY_0 | 2155877376 | 7 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<0> | 1357 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<1> | 1358 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FCLKIO_0 | 1352 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FSR-IO_2 | 1354 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 1521 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSR-IO_2 | 1523 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
 OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
-NODE | reg_count<2> | 1359 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
 
-SIGNAL_INSTANCE | reg_count<2>.SI | reg_count<2> | 0 | 2 | 2
+SIGNAL_INSTANCE | reg_count<2>.SI | reg_count<2> | 0 | 5 | 2
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<0> | 1357 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<1> | 1358 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
 OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
-SIGNAL | NODE | reg_count<2>.D1 | 1415 | ? | 0 | 0 | reg_count<2> | NULL | NULL | reg_count<2>.SI | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | reg_count<2>.D1 | 1578 | ? | 0 | 4096 | reg_count<2> | NULL | NULL | reg_count<2>.SI | 1 | 9 | MC_SI_D1
 SPPTERM | 0 | IV_ZERO
 OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
-SIGNAL | NODE | reg_count<2>.D2 | 1416 | ? | 0 | 4096 | reg_count<2> | NULL | NULL | reg_count<2>.SI | 2 | 9 | MC_SI_D2
-SPPTERM | 2 | IV_TRUE | reg_count<0> | IV_TRUE | reg_count<1>
+SIGNAL | NODE | reg_count<2>.D2 | 1579 | ? | 0 | 4096 | reg_count<2> | NULL | NULL | reg_count<2>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<2> | IV_TRUE | reg_count<7>
+SPPTERM | 3 | IV_FALSE | reg_count<6> | IV_TRUE | reg_count<1> | IV_TRUE | reg_count<0>
+SPPTERM | 3 | IV_TRUE | reg_count<1> | IV_FALSE | reg_count<7> | IV_TRUE | reg_count<0>
 
 SRFF_INSTANCE | reg_count<2>.REG | reg_count<2> | 0 | 3 | 1
 INPUT_NODE_TYPE | 0 | 8 | SRFF_D
-NODE | reg_count<2>.D | 1414 | ? | 0 | 0 | reg_count<2> | NULL | NULL | reg_count<2>.XOR | 0 | 7 | ALU_F
+NODE | reg_count<2>.D | 1577 | ? | 0 | 0 | reg_count<2> | NULL | NULL | reg_count<2>.XOR | 0 | 7 | ALU_F
 INPUT_NODE_TYPE | 1 | 8 | SRFF_C
-NODE | FCLKIO_0 | 1352 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_0 | 1521 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
 INPUT_NODE_TYPE | 3 | 8 | SRFF_R
-NODE | FSR-IO_2 | 1354 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
+NODE | FSR-IO_2 | 1523 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
 OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
-NODE | reg_count<2>.Q | 1417 | ? | 0 | 0 | reg_count<2> | NULL | NULL | reg_count<2>.REG | 0 | 8 | SRFF_Q
+NODE | reg_count<2>.Q | 1580 | ? | 0 | 0 | reg_count<2> | NULL | NULL | reg_count<2>.REG | 0 | 8 | SRFF_Q
 
-MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | reg_count<3> | pwm_COPY_0_COPY_0 | 2155877376 | 5 | 1
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | reg_count<3> | pwm_COPY_0_COPY_0 | 2155877376 | 8 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<0> | 1357 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<1> | 1358 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<2> | 1359 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FCLKIO_0 | 1352 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FSR-IO_2 | 1354 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 1521 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSR-IO_2 | 1523 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
 OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
-NODE | reg_count<3> | 1360 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
 
-SIGNAL_INSTANCE | reg_count<3>.SI | reg_count<3> | 0 | 3 | 2
+SIGNAL_INSTANCE | reg_count<3>.SI | reg_count<3> | 0 | 6 | 2
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<0> | 1357 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<1> | 1358 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<2> | 1359 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
 OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
-SIGNAL | NODE | reg_count<3>.D1 | 1419 | ? | 0 | 0 | reg_count<3> | NULL | NULL | reg_count<3>.SI | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | reg_count<3>.D1 | 1582 | ? | 0 | 4096 | reg_count<3> | NULL | NULL | reg_count<3>.SI | 1 | 9 | MC_SI_D1
 SPPTERM | 0 | IV_ZERO
 OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
-SIGNAL | NODE | reg_count<3>.D2 | 1420 | ? | 0 | 4096 | reg_count<3> | NULL | NULL | reg_count<3>.SI | 2 | 9 | MC_SI_D2
-SPPTERM | 3 | IV_TRUE | reg_count<0> | IV_TRUE | reg_count<1> | IV_TRUE | reg_count<2>
+SIGNAL | NODE | reg_count<3>.D2 | 1583 | ? | 0 | 4096 | reg_count<3> | NULL | NULL | reg_count<3>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<3> | IV_TRUE | reg_count<7>
+SPPTERM | 4 | IV_FALSE | reg_count<6> | IV_TRUE | reg_count<1> | IV_TRUE | reg_count<2> | IV_TRUE | reg_count<0>
+SPPTERM | 4 | IV_TRUE | reg_count<1> | IV_TRUE | reg_count<2> | IV_FALSE | reg_count<7> | IV_TRUE | reg_count<0>
 
 SRFF_INSTANCE | reg_count<3>.REG | reg_count<3> | 0 | 3 | 1
 INPUT_NODE_TYPE | 0 | 8 | SRFF_D
-NODE | reg_count<3>.D | 1418 | ? | 0 | 0 | reg_count<3> | NULL | NULL | reg_count<3>.XOR | 0 | 7 | ALU_F
+NODE | reg_count<3>.D | 1581 | ? | 0 | 0 | reg_count<3> | NULL | NULL | reg_count<3>.XOR | 0 | 7 | ALU_F
 INPUT_NODE_TYPE | 1 | 8 | SRFF_C
-NODE | FCLKIO_0 | 1352 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_0 | 1521 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
 INPUT_NODE_TYPE | 3 | 8 | SRFF_R
-NODE | FSR-IO_2 | 1354 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
+NODE | FSR-IO_2 | 1523 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
 OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
-NODE | reg_count<3>.Q | 1421 | ? | 0 | 0 | reg_count<3> | NULL | NULL | reg_count<3>.REG | 0 | 8 | SRFF_Q
+NODE | reg_count<3>.Q | 1584 | ? | 0 | 0 | reg_count<3> | NULL | NULL | reg_count<3>.REG | 0 | 8 | SRFF_Q
 
-MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | reg_count<5> | pwm_COPY_0_COPY_0 | 2155877376 | 7 | 1
+MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | reg_count<5> | pwm_COPY_0_COPY_0 | 2155877376 | 10 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<4> | 1355 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<0> | 1357 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+NODE | reg_count<5> | 1529 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<1> | 1358 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<2> | 1359 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<3> | 1360 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FCLKIO_0 | 1352 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FSR-IO_2 | 1354 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 1521 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSR-IO_2 | 1523 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
 OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
-NODE | reg_count<5> | 1361 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
+NODE | reg_count<5> | 1529 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
 
-SIGNAL_INSTANCE | reg_count<5>.SI | reg_count<5> | 0 | 5 | 2
+SIGNAL_INSTANCE | reg_count<5>.SI | reg_count<5> | 0 | 8 | 2
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<4> | 1355 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<0> | 1357 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+NODE | reg_count<5> | 1529 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<1> | 1358 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<2> | 1359 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<3> | 1360 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
 OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
-SIGNAL | NODE | reg_count<5>.D1 | 1423 | ? | 0 | 0 | reg_count<5> | NULL | NULL | reg_count<5>.SI | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | reg_count<5>.D1 | 1586 | ? | 0 | 4096 | reg_count<5> | NULL | NULL | reg_count<5>.SI | 1 | 9 | MC_SI_D1
 SPPTERM | 0 | IV_ZERO
 OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
-SIGNAL | NODE | reg_count<5>.D2 | 1424 | ? | 0 | 4096 | reg_count<5> | NULL | NULL | reg_count<5>.SI | 2 | 9 | MC_SI_D2
-SPPTERM | 5 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<0> | IV_TRUE | reg_count<1> | IV_TRUE | reg_count<2> | IV_TRUE | reg_count<3>
+SIGNAL | NODE | reg_count<5>.D2 | 1587 | ? | 0 | 4096 | reg_count<5> | NULL | NULL | reg_count<5>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 3 | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<5> | IV_TRUE | reg_count<7>
+SPPTERM | 6 | IV_TRUE | reg_count<4> | IV_FALSE | reg_count<6> | IV_TRUE | reg_count<1> | IV_TRUE | reg_count<2> | IV_TRUE | reg_count<3> | IV_TRUE | reg_count<0>
+SPPTERM | 6 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<1> | IV_TRUE | reg_count<2> | IV_TRUE | reg_count<3> | IV_FALSE | reg_count<7> | IV_TRUE | reg_count<0>
 
 SRFF_INSTANCE | reg_count<5>.REG | reg_count<5> | 0 | 3 | 1
 INPUT_NODE_TYPE | 0 | 8 | SRFF_D
-NODE | reg_count<5>.D | 1422 | ? | 0 | 0 | reg_count<5> | NULL | NULL | reg_count<5>.XOR | 0 | 7 | ALU_F
+NODE | reg_count<5>.D | 1585 | ? | 0 | 0 | reg_count<5> | NULL | NULL | reg_count<5>.XOR | 0 | 7 | ALU_F
 INPUT_NODE_TYPE | 1 | 8 | SRFF_C
-NODE | FCLKIO_0 | 1352 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_0 | 1521 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
 INPUT_NODE_TYPE | 3 | 8 | SRFF_R
-NODE | FSR-IO_2 | 1354 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
+NODE | FSR-IO_2 | 1523 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
 OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
-NODE | reg_count<5>.Q | 1425 | ? | 0 | 0 | reg_count<5> | NULL | NULL | reg_count<5>.REG | 0 | 8 | SRFF_Q
+NODE | reg_count<5>.Q | 1588 | ? | 0 | 0 | reg_count<5> | NULL | NULL | reg_count<5>.REG | 0 | 8 | SRFF_Q
 
-MACROCELL_INSTANCE | PrldLow+Tff+OptxMapped | reg_count<7> | pwm_COPY_0_COPY_0 | 2155877376 | 9 | 1
+MACROCELL_INSTANCE | PrldLow+OptxMapped | reg_count<7> | pwm_COPY_0_COPY_0 | 2155873280 | 10 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<4> | 1355 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<6> | 1356 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<0> | 1357 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<1> | 1358 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<2> | 1359 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<3> | 1360 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<5> | 1361 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
+NODE | reg_count<5> | 1529 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FCLKIO_0 | 1352 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FSR-IO_2 | 1354 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
+NODE | FCLKIO_0 | 1521 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSR-IO_2 | 1523 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
 OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
-NODE | reg_count<7> | 1362 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
 
-SIGNAL_INSTANCE | reg_count<7>.SI | reg_count<7> | 0 | 7 | 2
+SIGNAL_INSTANCE | reg_count<7>.SI | reg_count<7> | 0 | 8 | 2
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<4> | 1355 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<6> | 1356 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<0> | 1357 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<1> | 1358 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<2> | 1359 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<3> | 1360 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<5> | 1361 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
+NODE | reg_count<5> | 1529 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
 OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
-SIGNAL | NODE | reg_count<7>.D1 | 1427 | ? | 0 | 0 | reg_count<7> | NULL | NULL | reg_count<7>.SI | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | reg_count<7>.D1 | 1590 | ? | 0 | 4096 | reg_count<7> | NULL | NULL | reg_count<7>.SI | 1 | 9 | MC_SI_D1
 SPPTERM | 0 | IV_ZERO
 OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
-SIGNAL | NODE | reg_count<7>.D2 | 1428 | ? | 0 | 4096 | reg_count<7> | NULL | NULL | reg_count<7>.SI | 2 | 9 | MC_SI_D2
-SPPTERM | 7 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<0> | IV_TRUE | reg_count<1> | IV_TRUE | reg_count<2> | IV_TRUE | reg_count<3> | IV_TRUE | reg_count<5>
+SIGNAL | NODE | reg_count<7>.D2 | 1591 | ? | 0 | 4096 | reg_count<7> | NULL | NULL | reg_count<7>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | reg_count<6> | IV_TRUE | reg_count<7>
+SPPTERM | 6 | IV_FALSE | reg_count<4> | IV_FALSE | reg_count<1> | IV_FALSE | reg_count<2> | IV_FALSE | reg_count<3> | IV_FALSE | reg_count<5> | IV_TRUE | reg_count<7>
+SPPTERM | 8 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<1> | IV_TRUE | reg_count<2> | IV_TRUE | reg_count<3> | IV_TRUE | reg_count<5> | IV_FALSE | reg_count<7> | IV_TRUE | reg_count<0>
 
 SRFF_INSTANCE | reg_count<7>.REG | reg_count<7> | 0 | 3 | 1
 INPUT_NODE_TYPE | 0 | 8 | SRFF_D
-NODE | reg_count<7>.D | 1426 | ? | 0 | 0 | reg_count<7> | NULL | NULL | reg_count<7>.XOR | 0 | 7 | ALU_F
+NODE | reg_count<7>.D | 1589 | ? | 0 | 0 | reg_count<7> | NULL | NULL | reg_count<7>.XOR | 0 | 7 | ALU_F
 INPUT_NODE_TYPE | 1 | 8 | SRFF_C
-NODE | FCLKIO_0 | 1352 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_0 | 1521 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
 INPUT_NODE_TYPE | 3 | 8 | SRFF_R
-NODE | FSR-IO_2 | 1354 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
+NODE | FSR-IO_2 | 1523 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
 OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
-NODE | reg_count<7>.Q | 1429 | ? | 0 | 0 | reg_count<7> | NULL | NULL | reg_count<7>.REG | 0 | 8 | SRFF_Q
+NODE | reg_count<7>.Q | 1592 | ? | 0 | 0 | reg_count<7> | NULL | NULL | reg_count<7>.REG | 0 | 8 | SRFF_Q
+
+MACROCELL_INSTANCE | PrldLow+OptxMapped | reg_count<0> | pwm_COPY_0_COPY_0 | 2155873280 | 10 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<5> | 1529 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FCLKIO_0 | 1521 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | FSR-IO_2 | 1523 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
+OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+
+SIGNAL_INSTANCE | reg_count<0>.SI | reg_count<0> | 0 | 8 | 2
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<5> | 1529 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | reg_count<0>.D1 | 1594 | ? | 0 | 4096 | reg_count<0> | NULL | NULL | reg_count<0>.SI | 1 | 9 | MC_SI_D1
+SPPTERM | 0 | IV_ZERO
+OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | reg_count<0>.D2 | 1595 | ? | 0 | 4096 | reg_count<0> | NULL | NULL | reg_count<0>.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_FALSE | reg_count<6> | IV_FALSE | reg_count<0>
+SPPTERM | 2 | IV_FALSE | reg_count<7> | IV_FALSE | reg_count<0>
+SPPTERM | 6 | IV_FALSE | reg_count<4> | IV_FALSE | reg_count<1> | IV_FALSE | reg_count<2> | IV_FALSE | reg_count<3> | IV_FALSE | reg_count<5> | IV_FALSE | reg_count<0>
+
+SRFF_INSTANCE | reg_count<0>.REG | reg_count<0> | 0 | 3 | 1
+INPUT_NODE_TYPE | 0 | 8 | SRFF_D
+NODE | reg_count<0>.D | 1593 | ? | 0 | 0 | reg_count<0> | NULL | NULL | reg_count<0>.XOR | 0 | 7 | ALU_F
+INPUT_NODE_TYPE | 1 | 8 | SRFF_C
+NODE | FCLKIO_0 | 1521 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 3 | 8 | SRFF_R
+NODE | FSR-IO_2 | 1523 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
+OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
+NODE | reg_count<0>.Q | 1596 | ? | 0 | 0 | reg_count<0> | NULL | NULL | reg_count<0>.REG | 0 | 8 | SRFF_Q
 
 INPUT_INSTANCE | 0 | 0 | NULL | number_4_IBUF | pwm_COPY_0_COPY_0 | 16 | 1 | 1
 INPUT_NODE_TYPE | 0 | 5 | II_IN
-NODE | number<4> | 1388 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+NODE | number<4> | 1556 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
 OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
-NODE | number_4_IBUF | 1363 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_4_IBUF | 0 | 5 | II_IMUX
+NODE | number_4_IBUF | 1532 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_4_IBUF | 0 | 5 | II_IMUX
 
 INPUT_INSTANCE | 0 | 0 | NULL | lach_IBUF | pwm_COPY_0_COPY_0 | 16 | 1 | 1
 INPUT_NODE_TYPE | 0 | 5 | II_IN
-NODE | lach | 1389 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+NODE | lach | 1557 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
 OUTPUT_NODE_TYPE | 3 | 5 | II_FCLK
-NODE | FCLKIO_1 | 1364 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_1 | 1533 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
 
 MACROCELL_INSTANCE | PrldLow+OptxMapped | reg_pwm<4> | pwm_COPY_0_COPY_0 | 2155873280 | 3 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | number_4_IBUF | 1363 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_4_IBUF | 0 | 5 | II_IMUX
+NODE | number_4_IBUF | 1532 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_4_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | start_IBUF | 1353 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
+NODE | start_IBUF | 1522 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FCLKIO_1 | 1364 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_1 | 1533 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
 OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
-NODE | reg_pwm<4> | 1365 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
+NODE | reg_pwm<4> | 1534 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
 
 SIGNAL_INSTANCE | reg_pwm<4>.SI | reg_pwm<4> | 0 | 2 | 3
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | number_4_IBUF | 1363 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_4_IBUF | 0 | 5 | II_IMUX
+NODE | number_4_IBUF | 1532 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_4_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | start_IBUF | 1353 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
+NODE | start_IBUF | 1522 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
 OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
-SIGNAL | NODE | reg_pwm<4>.D1 | 1431 | ? | 0 | 4096 | reg_pwm<4> | NULL | NULL | reg_pwm<4>.SI | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | reg_pwm<4>.D1 | 1598 | ? | 0 | 4096 | reg_pwm<4> | NULL | NULL | reg_pwm<4>.SI | 1 | 9 | MC_SI_D1
 SPPTERM | 0 | IV_ZERO
 OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
-SIGNAL | NODE | reg_pwm<4>.D2 | 1432 | ? | 0 | 4096 | reg_pwm<4> | NULL | NULL | reg_pwm<4>.SI | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | reg_pwm<4>.D2 | 1599 | ? | 0 | 4096 | reg_pwm<4> | NULL | NULL | reg_pwm<4>.SI | 2 | 9 | MC_SI_D2
 SPPTERM | 1 | IV_TRUE | number_4_IBUF
 OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
-SIGNAL | NODE | reg_pwm<4>.CE | 1433 | ? | 0 | 4096 | reg_pwm<4> | NULL | NULL | reg_pwm<4>.SI | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | reg_pwm<4>.CE | 1600 | ? | 0 | 4096 | reg_pwm<4> | NULL | NULL | reg_pwm<4>.SI | 10 | 9 | MC_SI_CE
 SPPTERM | 1 | IV_FALSE | start_IBUF
 
 SRFF_INSTANCE | reg_pwm<4>.REG | reg_pwm<4> | 0 | 3 | 1
 INPUT_NODE_TYPE | 0 | 8 | SRFF_D
-NODE | reg_pwm<4>.D | 1430 | ? | 0 | 0 | reg_pwm<4> | NULL | NULL | reg_pwm<4>.XOR | 0 | 7 | ALU_F
+NODE | reg_pwm<4>.D | 1597 | ? | 0 | 0 | reg_pwm<4> | NULL | NULL | reg_pwm<4>.XOR | 0 | 7 | ALU_F
 INPUT_NODE_TYPE | 1 | 8 | SRFF_C
-NODE | FCLKIO_1 | 1364 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_1 | 1533 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
 INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
-SIGNAL | NODE | reg_pwm<4>.CE | 1433 | ? | 0 | 4096 | reg_pwm<4> | NULL | NULL | reg_pwm<4>.SI | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | reg_pwm<4>.CE | 1600 | ? | 0 | 4096 | reg_pwm<4> | NULL | NULL | reg_pwm<4>.SI | 10 | 9 | MC_SI_CE
 SPPTERM | 1 | IV_FALSE | start_IBUF
 OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
-NODE | reg_pwm<4>.Q | 1434 | ? | 0 | 0 | reg_pwm<4> | NULL | NULL | reg_pwm<4>.REG | 0 | 8 | SRFF_Q
+NODE | reg_pwm<4>.Q | 1601 | ? | 0 | 0 | reg_pwm<4> | NULL | NULL | reg_pwm<4>.REG | 0 | 8 | SRFF_Q
 
 INPUT_INSTANCE | 0 | 0 | NULL | number_6_IBUF | pwm_COPY_0_COPY_0 | 16 | 1 | 1
 INPUT_NODE_TYPE | 0 | 5 | II_IN
-NODE | number<6> | 1390 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+NODE | number<6> | 1558 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
 OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
-NODE | number_6_IBUF | 1366 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_6_IBUF | 0 | 5 | II_IMUX
+NODE | number_6_IBUF | 1535 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_6_IBUF | 0 | 5 | II_IMUX
 
 MACROCELL_INSTANCE | PrldLow+OptxMapped | reg_pwm<6> | pwm_COPY_0_COPY_0 | 2155873280 | 3 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | number_6_IBUF | 1366 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_6_IBUF | 0 | 5 | II_IMUX
+NODE | number_6_IBUF | 1535 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_6_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | start_IBUF | 1353 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
+NODE | start_IBUF | 1522 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FCLKIO_1 | 1364 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_1 | 1533 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
 OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
-NODE | reg_pwm<6> | 1367 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
+NODE | reg_pwm<6> | 1536 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
 
 SIGNAL_INSTANCE | reg_pwm<6>.SI | reg_pwm<6> | 0 | 2 | 3
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | number_6_IBUF | 1366 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_6_IBUF | 0 | 5 | II_IMUX
+NODE | number_6_IBUF | 1535 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_6_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | start_IBUF | 1353 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
+NODE | start_IBUF | 1522 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
 OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
-SIGNAL | NODE | reg_pwm<6>.D1 | 1436 | ? | 0 | 4096 | reg_pwm<6> | NULL | NULL | reg_pwm<6>.SI | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | reg_pwm<6>.D1 | 1603 | ? | 0 | 4096 | reg_pwm<6> | NULL | NULL | reg_pwm<6>.SI | 1 | 9 | MC_SI_D1
 SPPTERM | 0 | IV_ZERO
 OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
-SIGNAL | NODE | reg_pwm<6>.D2 | 1437 | ? | 0 | 4096 | reg_pwm<6> | NULL | NULL | reg_pwm<6>.SI | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | reg_pwm<6>.D2 | 1604 | ? | 0 | 4096 | reg_pwm<6> | NULL | NULL | reg_pwm<6>.SI | 2 | 9 | MC_SI_D2
 SPPTERM | 1 | IV_TRUE | number_6_IBUF
 OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
-SIGNAL | NODE | reg_pwm<6>.CE | 1438 | ? | 0 | 4096 | reg_pwm<6> | NULL | NULL | reg_pwm<6>.SI | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | reg_pwm<6>.CE | 1605 | ? | 0 | 4096 | reg_pwm<6> | NULL | NULL | reg_pwm<6>.SI | 10 | 9 | MC_SI_CE
 SPPTERM | 1 | IV_FALSE | start_IBUF
 
 SRFF_INSTANCE | reg_pwm<6>.REG | reg_pwm<6> | 0 | 3 | 1
 INPUT_NODE_TYPE | 0 | 8 | SRFF_D
-NODE | reg_pwm<6>.D | 1435 | ? | 0 | 0 | reg_pwm<6> | NULL | NULL | reg_pwm<6>.XOR | 0 | 7 | ALU_F
+NODE | reg_pwm<6>.D | 1602 | ? | 0 | 0 | reg_pwm<6> | NULL | NULL | reg_pwm<6>.XOR | 0 | 7 | ALU_F
 INPUT_NODE_TYPE | 1 | 8 | SRFF_C
-NODE | FCLKIO_1 | 1364 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_1 | 1533 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
 INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
-SIGNAL | NODE | reg_pwm<6>.CE | 1438 | ? | 0 | 4096 | reg_pwm<6> | NULL | NULL | reg_pwm<6>.SI | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | reg_pwm<6>.CE | 1605 | ? | 0 | 4096 | reg_pwm<6> | NULL | NULL | reg_pwm<6>.SI | 10 | 9 | MC_SI_CE
 SPPTERM | 1 | IV_FALSE | start_IBUF
 OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
-NODE | reg_pwm<6>.Q | 1439 | ? | 0 | 0 | reg_pwm<6> | NULL | NULL | reg_pwm<6>.REG | 0 | 8 | SRFF_Q
+NODE | reg_pwm<6>.Q | 1606 | ? | 0 | 0 | reg_pwm<6> | NULL | NULL | reg_pwm<6>.REG | 0 | 8 | SRFF_Q
 
 INPUT_INSTANCE | 0 | 0 | NULL | number_7_IBUF | pwm_COPY_0_COPY_0 | 16 | 1 | 1
 INPUT_NODE_TYPE | 0 | 5 | II_IN
-NODE | number<7> | 1391 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+NODE | number<7> | 1559 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
 OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
-NODE | number_7_IBUF | 1368 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_7_IBUF | 0 | 5 | II_IMUX
+NODE | number_7_IBUF | 1537 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_7_IBUF | 0 | 5 | II_IMUX
 
 MACROCELL_INSTANCE | PrldLow+OptxMapped | reg_pwm<7> | pwm_COPY_0_COPY_0 | 2155873280 | 3 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | number_7_IBUF | 1368 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_7_IBUF | 0 | 5 | II_IMUX
+NODE | number_7_IBUF | 1537 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_7_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | start_IBUF | 1353 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
+NODE | start_IBUF | 1522 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FCLKIO_1 | 1364 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_1 | 1533 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
 OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
-NODE | reg_pwm<7> | 1369 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<7>.Q | reg_pwm<7> | 1 | 0 | MC_UIM
+NODE | reg_pwm<7> | 1538 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<7>.Q | reg_pwm<7> | 1 | 0 | MC_UIM
 
 SIGNAL_INSTANCE | reg_pwm<7>.SI | reg_pwm<7> | 0 | 2 | 3
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | number_7_IBUF | 1368 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_7_IBUF | 0 | 5 | II_IMUX
+NODE | number_7_IBUF | 1537 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_7_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | start_IBUF | 1353 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
+NODE | start_IBUF | 1522 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
 OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
-SIGNAL | NODE | reg_pwm<7>.D1 | 1441 | ? | 0 | 4096 | reg_pwm<7> | NULL | NULL | reg_pwm<7>.SI | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | reg_pwm<7>.D1 | 1608 | ? | 0 | 4096 | reg_pwm<7> | NULL | NULL | reg_pwm<7>.SI | 1 | 9 | MC_SI_D1
 SPPTERM | 0 | IV_ZERO
 OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
-SIGNAL | NODE | reg_pwm<7>.D2 | 1442 | ? | 0 | 4096 | reg_pwm<7> | NULL | NULL | reg_pwm<7>.SI | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | reg_pwm<7>.D2 | 1609 | ? | 0 | 4096 | reg_pwm<7> | NULL | NULL | reg_pwm<7>.SI | 2 | 9 | MC_SI_D2
 SPPTERM | 1 | IV_TRUE | number_7_IBUF
 OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
-SIGNAL | NODE | reg_pwm<7>.CE | 1443 | ? | 0 | 4096 | reg_pwm<7> | NULL | NULL | reg_pwm<7>.SI | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | reg_pwm<7>.CE | 1610 | ? | 0 | 4096 | reg_pwm<7> | NULL | NULL | reg_pwm<7>.SI | 10 | 9 | MC_SI_CE
 SPPTERM | 1 | IV_FALSE | start_IBUF
 
 SRFF_INSTANCE | reg_pwm<7>.REG | reg_pwm<7> | 0 | 3 | 1
 INPUT_NODE_TYPE | 0 | 8 | SRFF_D
-NODE | reg_pwm<7>.D | 1440 | ? | 0 | 0 | reg_pwm<7> | NULL | NULL | reg_pwm<7>.XOR | 0 | 7 | ALU_F
+NODE | reg_pwm<7>.D | 1607 | ? | 0 | 0 | reg_pwm<7> | NULL | NULL | reg_pwm<7>.XOR | 0 | 7 | ALU_F
 INPUT_NODE_TYPE | 1 | 8 | SRFF_C
-NODE | FCLKIO_1 | 1364 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_1 | 1533 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
 INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
-SIGNAL | NODE | reg_pwm<7>.CE | 1443 | ? | 0 | 4096 | reg_pwm<7> | NULL | NULL | reg_pwm<7>.SI | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | reg_pwm<7>.CE | 1610 | ? | 0 | 4096 | reg_pwm<7> | NULL | NULL | reg_pwm<7>.SI | 10 | 9 | MC_SI_CE
 SPPTERM | 1 | IV_FALSE | start_IBUF
 OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
-NODE | reg_pwm<7>.Q | 1444 | ? | 0 | 0 | reg_pwm<7> | NULL | NULL | reg_pwm<7>.REG | 0 | 8 | SRFF_Q
+NODE | reg_pwm<7>.Q | 1611 | ? | 0 | 0 | reg_pwm<7> | NULL | NULL | reg_pwm<7>.REG | 0 | 8 | SRFF_Q
 
 INPUT_INSTANCE | 0 | 0 | NULL | number_1_IBUF | pwm_COPY_0_COPY_0 | 16 | 1 | 1
 INPUT_NODE_TYPE | 0 | 5 | II_IN
-NODE | number<1> | 1392 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+NODE | number<1> | 1560 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
 OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
-NODE | number_1_IBUF | 1370 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_1_IBUF | 0 | 5 | II_IMUX
+NODE | number_1_IBUF | 1539 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_1_IBUF | 0 | 5 | II_IMUX
 
 MACROCELL_INSTANCE | PrldLow+OptxMapped | reg_pwm<1> | pwm_COPY_0_COPY_0 | 2155873280 | 3 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | number_1_IBUF | 1370 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_1_IBUF | 0 | 5 | II_IMUX
+NODE | number_1_IBUF | 1539 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_1_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | start_IBUF | 1353 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
+NODE | start_IBUF | 1522 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FCLKIO_1 | 1364 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_1 | 1533 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
 OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
-NODE | reg_pwm<1> | 1371 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<1>.Q | reg_pwm<1> | 1 | 0 | MC_UIM
+NODE | reg_pwm<1> | 1540 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<1>.Q | reg_pwm<1> | 1 | 0 | MC_UIM
 
 SIGNAL_INSTANCE | reg_pwm<1>.SI | reg_pwm<1> | 0 | 2 | 3
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | number_1_IBUF | 1370 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_1_IBUF | 0 | 5 | II_IMUX
+NODE | number_1_IBUF | 1539 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_1_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | start_IBUF | 1353 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
+NODE | start_IBUF | 1522 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
 OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
-SIGNAL | NODE | reg_pwm<1>.D1 | 1446 | ? | 0 | 4096 | reg_pwm<1> | NULL | NULL | reg_pwm<1>.SI | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | reg_pwm<1>.D1 | 1613 | ? | 0 | 4096 | reg_pwm<1> | NULL | NULL | reg_pwm<1>.SI | 1 | 9 | MC_SI_D1
 SPPTERM | 0 | IV_ZERO
 OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
-SIGNAL | NODE | reg_pwm<1>.D2 | 1447 | ? | 0 | 4096 | reg_pwm<1> | NULL | NULL | reg_pwm<1>.SI | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | reg_pwm<1>.D2 | 1614 | ? | 0 | 4096 | reg_pwm<1> | NULL | NULL | reg_pwm<1>.SI | 2 | 9 | MC_SI_D2
 SPPTERM | 1 | IV_TRUE | number_1_IBUF
 OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
-SIGNAL | NODE | reg_pwm<1>.CE | 1448 | ? | 0 | 4096 | reg_pwm<1> | NULL | NULL | reg_pwm<1>.SI | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | reg_pwm<1>.CE | 1615 | ? | 0 | 4096 | reg_pwm<1> | NULL | NULL | reg_pwm<1>.SI | 10 | 9 | MC_SI_CE
 SPPTERM | 1 | IV_FALSE | start_IBUF
 
 SRFF_INSTANCE | reg_pwm<1>.REG | reg_pwm<1> | 0 | 3 | 1
 INPUT_NODE_TYPE | 0 | 8 | SRFF_D
-NODE | reg_pwm<1>.D | 1445 | ? | 0 | 0 | reg_pwm<1> | NULL | NULL | reg_pwm<1>.XOR | 0 | 7 | ALU_F
+NODE | reg_pwm<1>.D | 1612 | ? | 0 | 0 | reg_pwm<1> | NULL | NULL | reg_pwm<1>.XOR | 0 | 7 | ALU_F
 INPUT_NODE_TYPE | 1 | 8 | SRFF_C
-NODE | FCLKIO_1 | 1364 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_1 | 1533 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
 INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
-SIGNAL | NODE | reg_pwm<1>.CE | 1448 | ? | 0 | 4096 | reg_pwm<1> | NULL | NULL | reg_pwm<1>.SI | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | reg_pwm<1>.CE | 1615 | ? | 0 | 4096 | reg_pwm<1> | NULL | NULL | reg_pwm<1>.SI | 10 | 9 | MC_SI_CE
 SPPTERM | 1 | IV_FALSE | start_IBUF
 OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
-NODE | reg_pwm<1>.Q | 1449 | ? | 0 | 0 | reg_pwm<1> | NULL | NULL | reg_pwm<1>.REG | 0 | 8 | SRFF_Q
+NODE | reg_pwm<1>.Q | 1616 | ? | 0 | 0 | reg_pwm<1> | NULL | NULL | reg_pwm<1>.REG | 0 | 8 | SRFF_Q
 
 INPUT_INSTANCE | 0 | 0 | NULL | number_2_IBUF | pwm_COPY_0_COPY_0 | 16 | 1 | 1
 INPUT_NODE_TYPE | 0 | 5 | II_IN
-NODE | number<2> | 1393 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+NODE | number<2> | 1561 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
 OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
-NODE | number_2_IBUF | 1372 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_2_IBUF | 0 | 5 | II_IMUX
+NODE | number_2_IBUF | 1541 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_2_IBUF | 0 | 5 | II_IMUX
 
 MACROCELL_INSTANCE | PrldLow+OptxMapped | reg_pwm<2> | pwm_COPY_0_COPY_0 | 2155873280 | 3 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | number_2_IBUF | 1372 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_2_IBUF | 0 | 5 | II_IMUX
+NODE | number_2_IBUF | 1541 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_2_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | start_IBUF | 1353 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
+NODE | start_IBUF | 1522 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FCLKIO_1 | 1364 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_1 | 1533 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
 OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
-NODE | reg_pwm<2> | 1373 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<2>.Q | reg_pwm<2> | 1 | 0 | MC_UIM
+NODE | reg_pwm<2> | 1542 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<2>.Q | reg_pwm<2> | 1 | 0 | MC_UIM
 
 SIGNAL_INSTANCE | reg_pwm<2>.SI | reg_pwm<2> | 0 | 2 | 3
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | number_2_IBUF | 1372 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_2_IBUF | 0 | 5 | II_IMUX
+NODE | number_2_IBUF | 1541 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_2_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | start_IBUF | 1353 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
+NODE | start_IBUF | 1522 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
 OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
-SIGNAL | NODE | reg_pwm<2>.D1 | 1451 | ? | 0 | 4096 | reg_pwm<2> | NULL | NULL | reg_pwm<2>.SI | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | reg_pwm<2>.D1 | 1618 | ? | 0 | 4096 | reg_pwm<2> | NULL | NULL | reg_pwm<2>.SI | 1 | 9 | MC_SI_D1
 SPPTERM | 0 | IV_ZERO
 OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
-SIGNAL | NODE | reg_pwm<2>.D2 | 1452 | ? | 0 | 4096 | reg_pwm<2> | NULL | NULL | reg_pwm<2>.SI | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | reg_pwm<2>.D2 | 1619 | ? | 0 | 4096 | reg_pwm<2> | NULL | NULL | reg_pwm<2>.SI | 2 | 9 | MC_SI_D2
 SPPTERM | 1 | IV_TRUE | number_2_IBUF
 OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
-SIGNAL | NODE | reg_pwm<2>.CE | 1453 | ? | 0 | 4096 | reg_pwm<2> | NULL | NULL | reg_pwm<2>.SI | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | reg_pwm<2>.CE | 1620 | ? | 0 | 4096 | reg_pwm<2> | NULL | NULL | reg_pwm<2>.SI | 10 | 9 | MC_SI_CE
 SPPTERM | 1 | IV_FALSE | start_IBUF
 
 SRFF_INSTANCE | reg_pwm<2>.REG | reg_pwm<2> | 0 | 3 | 1
 INPUT_NODE_TYPE | 0 | 8 | SRFF_D
-NODE | reg_pwm<2>.D | 1450 | ? | 0 | 0 | reg_pwm<2> | NULL | NULL | reg_pwm<2>.XOR | 0 | 7 | ALU_F
+NODE | reg_pwm<2>.D | 1617 | ? | 0 | 0 | reg_pwm<2> | NULL | NULL | reg_pwm<2>.XOR | 0 | 7 | ALU_F
 INPUT_NODE_TYPE | 1 | 8 | SRFF_C
-NODE | FCLKIO_1 | 1364 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_1 | 1533 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
 INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
-SIGNAL | NODE | reg_pwm<2>.CE | 1453 | ? | 0 | 4096 | reg_pwm<2> | NULL | NULL | reg_pwm<2>.SI | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | reg_pwm<2>.CE | 1620 | ? | 0 | 4096 | reg_pwm<2> | NULL | NULL | reg_pwm<2>.SI | 10 | 9 | MC_SI_CE
 SPPTERM | 1 | IV_FALSE | start_IBUF
 OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
-NODE | reg_pwm<2>.Q | 1454 | ? | 0 | 0 | reg_pwm<2> | NULL | NULL | reg_pwm<2>.REG | 0 | 8 | SRFF_Q
+NODE | reg_pwm<2>.Q | 1621 | ? | 0 | 0 | reg_pwm<2> | NULL | NULL | reg_pwm<2>.REG | 0 | 8 | SRFF_Q
 
 INPUT_INSTANCE | 0 | 0 | NULL | number_3_IBUF | pwm_COPY_0_COPY_0 | 16 | 1 | 1
 INPUT_NODE_TYPE | 0 | 5 | II_IN
-NODE | number<3> | 1394 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+NODE | number<3> | 1562 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
 OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
-NODE | number_3_IBUF | 1374 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_3_IBUF | 0 | 5 | II_IMUX
+NODE | number_3_IBUF | 1543 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_3_IBUF | 0 | 5 | II_IMUX
 
-MACROCELL_INSTANCE | PrldLow+OptxMapped | reg_pwm<3> | pwm_COPY_0_COPY_0 | 2155873280 | 3 | 1
+MACROCELL_INSTANCE | PrldLow+OptxMapped | reg_pwm<3> | pwm_COPY_0_COPY_0 | 2155873280 | 9 | 2
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | number_3_IBUF | 1374 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_3_IBUF | 0 | 5 | II_IMUX
+NODE | number_3_IBUF | 1543 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_3_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | start_IBUF | 1353 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
+NODE | start_IBUF | 1522 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FCLKIO_1 | 1364 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_1 | 1533 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<2> | 1542 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<2>.Q | reg_pwm<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<0> | 1549 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<0>.Q | reg_pwm<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<1> | 1540 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<1>.Q | reg_pwm<1> | 1 | 0 | MC_UIM
 OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
-NODE | reg_pwm<3> | 1375 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.Q | reg_pwm<3> | 1 | 0 | MC_UIM
+NODE | reg_pwm<3> | 1544 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.Q | reg_pwm<3> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | reg_pwm<3>.EXP | 1658 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.EXP | reg_pwm<3> | 4 | 0 | MC_EXPORT
 
-SIGNAL_INSTANCE | reg_pwm<3>.SI | reg_pwm<3> | 0 | 2 | 3
+SIGNAL_INSTANCE | reg_pwm<3>.SI | reg_pwm<3> | 0 | 8 | 4
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | number_3_IBUF | 1374 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_3_IBUF | 0 | 5 | II_IMUX
+NODE | number_3_IBUF | 1543 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_3_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | start_IBUF | 1353 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
+NODE | start_IBUF | 1522 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<2> | 1542 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<2>.Q | reg_pwm<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<0> | 1549 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<0>.Q | reg_pwm<0> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<1> | 1540 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<1>.Q | reg_pwm<1> | 1 | 0 | MC_UIM
 OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
-SIGNAL | NODE | reg_pwm<3>.D1 | 1456 | ? | 0 | 4096 | reg_pwm<3> | NULL | NULL | reg_pwm<3>.SI | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | reg_pwm<3>.D1 | 1623 | ? | 0 | 4096 | reg_pwm<3> | NULL | NULL | reg_pwm<3>.SI | 1 | 9 | MC_SI_D1
 SPPTERM | 0 | IV_ZERO
 OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
-SIGNAL | NODE | reg_pwm<3>.D2 | 1457 | ? | 0 | 4096 | reg_pwm<3> | NULL | NULL | reg_pwm<3>.SI | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | reg_pwm<3>.D2 | 1624 | ? | 0 | 4096 | reg_pwm<3> | NULL | NULL | reg_pwm<3>.SI | 2 | 9 | MC_SI_D2
 SPPTERM | 1 | IV_TRUE | number_3_IBUF
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | reg_pwm<3>.EXP | 1656 | ? | 0 | 0 | reg_pwm<3> | NULL | NULL | reg_pwm<3>.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 4 | IV_FALSE | reg_count<1> | IV_FALSE | reg_count<0> | IV_TRUE | reg_pwm<2> | IV_TRUE | reg_pwm<0>
+SPPTERM | 4 | IV_FALSE | reg_count<2> | IV_FALSE | reg_count<0> | IV_TRUE | reg_pwm<1> | IV_TRUE | reg_pwm<0>
 OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
-SIGNAL | NODE | reg_pwm<3>.CE | 1458 | ? | 0 | 4096 | reg_pwm<3> | NULL | NULL | reg_pwm<3>.SI | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | reg_pwm<3>.CE | 1625 | ? | 0 | 4096 | reg_pwm<3> | NULL | NULL | reg_pwm<3>.SI | 10 | 9 | MC_SI_CE
 SPPTERM | 1 | IV_FALSE | start_IBUF
 
 SRFF_INSTANCE | reg_pwm<3>.REG | reg_pwm<3> | 0 | 3 | 1
 INPUT_NODE_TYPE | 0 | 8 | SRFF_D
-NODE | reg_pwm<3>.D | 1455 | ? | 0 | 0 | reg_pwm<3> | NULL | NULL | reg_pwm<3>.XOR | 0 | 7 | ALU_F
+NODE | reg_pwm<3>.D | 1622 | ? | 0 | 0 | reg_pwm<3> | NULL | NULL | reg_pwm<3>.XOR | 0 | 7 | ALU_F
 INPUT_NODE_TYPE | 1 | 8 | SRFF_C
-NODE | FCLKIO_1 | 1364 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_1 | 1533 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
 INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
-SIGNAL | NODE | reg_pwm<3>.CE | 1458 | ? | 0 | 4096 | reg_pwm<3> | NULL | NULL | reg_pwm<3>.SI | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | reg_pwm<3>.CE | 1625 | ? | 0 | 4096 | reg_pwm<3> | NULL | NULL | reg_pwm<3>.SI | 10 | 9 | MC_SI_CE
 SPPTERM | 1 | IV_FALSE | start_IBUF
 OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
-NODE | reg_pwm<3>.Q | 1459 | ? | 0 | 0 | reg_pwm<3> | NULL | NULL | reg_pwm<3>.REG | 0 | 8 | SRFF_Q
+NODE | reg_pwm<3>.Q | 1626 | ? | 0 | 0 | reg_pwm<3> | NULL | NULL | reg_pwm<3>.REG | 0 | 8 | SRFF_Q
 
 INPUT_INSTANCE | 0 | 0 | NULL | number_5_IBUF | pwm_COPY_0_COPY_0 | 16 | 1 | 1
 INPUT_NODE_TYPE | 0 | 5 | II_IN
-NODE | number<5> | 1395 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+NODE | number<5> | 1563 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
 OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
-NODE | number_5_IBUF | 1376 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_5_IBUF | 0 | 5 | II_IMUX
+NODE | number_5_IBUF | 1545 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_5_IBUF | 0 | 5 | II_IMUX
 
 MACROCELL_INSTANCE | PrldLow+OptxMapped | reg_pwm<5> | pwm_COPY_0_COPY_0 | 2155873280 | 3 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | number_5_IBUF | 1376 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_5_IBUF | 0 | 5 | II_IMUX
+NODE | number_5_IBUF | 1545 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_5_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | start_IBUF | 1353 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
+NODE | start_IBUF | 1522 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FCLKIO_1 | 1364 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_1 | 1533 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
 OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
-NODE | reg_pwm<5> | 1377 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<5>.Q | reg_pwm<5> | 1 | 0 | MC_UIM
+NODE | reg_pwm<5> | 1546 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<5>.Q | reg_pwm<5> | 1 | 0 | MC_UIM
 
 SIGNAL_INSTANCE | reg_pwm<5>.SI | reg_pwm<5> | 0 | 2 | 3
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | number_5_IBUF | 1376 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_5_IBUF | 0 | 5 | II_IMUX
+NODE | number_5_IBUF | 1545 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_5_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | start_IBUF | 1353 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
+NODE | start_IBUF | 1522 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
 OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
-SIGNAL | NODE | reg_pwm<5>.D1 | 1461 | ? | 0 | 4096 | reg_pwm<5> | NULL | NULL | reg_pwm<5>.SI | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | reg_pwm<5>.D1 | 1628 | ? | 0 | 4096 | reg_pwm<5> | NULL | NULL | reg_pwm<5>.SI | 1 | 9 | MC_SI_D1
 SPPTERM | 0 | IV_ZERO
 OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
-SIGNAL | NODE | reg_pwm<5>.D2 | 1462 | ? | 0 | 4096 | reg_pwm<5> | NULL | NULL | reg_pwm<5>.SI | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | reg_pwm<5>.D2 | 1629 | ? | 0 | 4096 | reg_pwm<5> | NULL | NULL | reg_pwm<5>.SI | 2 | 9 | MC_SI_D2
 SPPTERM | 1 | IV_TRUE | number_5_IBUF
 OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
-SIGNAL | NODE | reg_pwm<5>.CE | 1463 | ? | 0 | 4096 | reg_pwm<5> | NULL | NULL | reg_pwm<5>.SI | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | reg_pwm<5>.CE | 1630 | ? | 0 | 4096 | reg_pwm<5> | NULL | NULL | reg_pwm<5>.SI | 10 | 9 | MC_SI_CE
 SPPTERM | 1 | IV_FALSE | start_IBUF
 
 SRFF_INSTANCE | reg_pwm<5>.REG | reg_pwm<5> | 0 | 3 | 1
 INPUT_NODE_TYPE | 0 | 8 | SRFF_D
-NODE | reg_pwm<5>.D | 1460 | ? | 0 | 0 | reg_pwm<5> | NULL | NULL | reg_pwm<5>.XOR | 0 | 7 | ALU_F
+NODE | reg_pwm<5>.D | 1627 | ? | 0 | 0 | reg_pwm<5> | NULL | NULL | reg_pwm<5>.XOR | 0 | 7 | ALU_F
 INPUT_NODE_TYPE | 1 | 8 | SRFF_C
-NODE | FCLKIO_1 | 1364 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_1 | 1533 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
 INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
-SIGNAL | NODE | reg_pwm<5>.CE | 1463 | ? | 0 | 4096 | reg_pwm<5> | NULL | NULL | reg_pwm<5>.SI | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | reg_pwm<5>.CE | 1630 | ? | 0 | 4096 | reg_pwm<5> | NULL | NULL | reg_pwm<5>.SI | 10 | 9 | MC_SI_CE
 SPPTERM | 1 | IV_FALSE | start_IBUF
 OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
-NODE | reg_pwm<5>.Q | 1464 | ? | 0 | 0 | reg_pwm<5> | NULL | NULL | reg_pwm<5>.REG | 0 | 8 | SRFF_Q
+NODE | reg_pwm<5>.Q | 1631 | ? | 0 | 0 | reg_pwm<5> | NULL | NULL | reg_pwm<5>.REG | 0 | 8 | SRFF_Q
 
 MACROCELL_INSTANCE | Inv+PrldLow+OptxMapped | pwm_out | pwm_COPY_0_COPY_0 | 2155873536 | 13 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<7> | 1362 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<7> | 1369 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<7>.Q | reg_pwm<7> | 1 | 0 | MC_UIM
+NODE | reg_pwm<7> | 1538 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<7>.Q | reg_pwm<7> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<6> | 1356 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<6> | 1367 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
+NODE | reg_pwm<6> | 1536 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM | 1385 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$5_INV$175.Q | $OpTx$$OpTx$FX_DC$5_INV$175 | 1 | 0 | MC_UIM
+NODE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM | 1553 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$13_INV$183.Q | $OpTx$$OpTx$FX_DC$13_INV$183 | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<5> | 1361 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
+NODE | reg_count<5> | 1529 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<5> | 1377 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<5>.Q | reg_pwm<5> | 1 | 0 | MC_UIM
+NODE | reg_pwm<5> | 1546 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<5>.Q | reg_pwm<5> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<4> | 1355 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<4> | 1365 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
+NODE | reg_pwm<4> | 1534 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | EXP4_.EXP | 1491 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP4_.EXP | EXP4_ | 4 | 0 | MC_EXPORT
+NODE | EXP12_.EXP | 1664 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP12_.EXP | EXP12_ | 4 | 0 | MC_EXPORT
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | EXP7_.EXP | 1495 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP7_.EXP | EXP7_ | 4 | 0 | MC_EXPORT
+NODE | EXP13_.EXP | 1665 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP13_.EXP | EXP13_ | 4 | 0 | MC_EXPORT
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FCLKIO_0 | 1352 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_0 | 1521 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FSR-IO_2 | 1354 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
+NODE | FSR-IO_2 | 1523 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
 OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
-NODE | pwm_out | 1378 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | pwm_out.Q | pwm_out | 1 | 0 | MC_UIM
+NODE | pwm_out | 1547 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | pwm_out.Q | pwm_out | 1 | 0 | MC_UIM
 
 SIGNAL_INSTANCE | pwm_out.SI | pwm_out | 0 | 11 | 2
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<7> | 1362 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<7> | 1369 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<7>.Q | reg_pwm<7> | 1 | 0 | MC_UIM
+NODE | reg_pwm<7> | 1538 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<7>.Q | reg_pwm<7> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<6> | 1356 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<6> | 1367 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
+NODE | reg_pwm<6> | 1536 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM | 1385 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$5_INV$175.Q | $OpTx$$OpTx$FX_DC$5_INV$175 | 1 | 0 | MC_UIM
+NODE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM | 1553 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$13_INV$183.Q | $OpTx$$OpTx$FX_DC$13_INV$183 | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<5> | 1361 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
+NODE | reg_count<5> | 1529 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<5> | 1377 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<5>.Q | reg_pwm<5> | 1 | 0 | MC_UIM
+NODE | reg_pwm<5> | 1546 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<5>.Q | reg_pwm<5> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<4> | 1355 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<4> | 1365 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
+NODE | reg_pwm<4> | 1534 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | EXP4_.EXP | 1491 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP4_.EXP | EXP4_ | 4 | 0 | MC_EXPORT
+NODE | EXP12_.EXP | 1664 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP12_.EXP | EXP12_ | 4 | 0 | MC_EXPORT
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | EXP7_.EXP | 1495 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP7_.EXP | EXP7_ | 4 | 0 | MC_EXPORT
+NODE | EXP13_.EXP | 1665 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP13_.EXP | EXP13_ | 4 | 0 | MC_EXPORT
 OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
-SIGNAL | NODE | pwm_out.D1 | 1466 | ? | 0 | 4096 | pwm_out | NULL | NULL | pwm_out.SI | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | pwm_out.D1 | 1633 | ? | 0 | 4096 | pwm_out | NULL | NULL | pwm_out.SI | 1 | 9 | MC_SI_D1
 SPPTERM | 0 | IV_ZERO
 OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
-SIGNAL | NODE | pwm_out.D2 | 1467 | ? | 0 | 4096 | pwm_out | NULL | NULL | pwm_out.SI | 2 | 9 | MC_SI_D2
-SPPTERM | 1 | IV_TRUE | EXP4_.EXP
-SPPTERM | 1 | IV_TRUE | EXP7_.EXP
+SIGNAL | NODE | pwm_out.D2 | 1634 | ? | 0 | 4096 | pwm_out | NULL | NULL | pwm_out.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | EXP12_.EXP
+SPPTERM | 1 | IV_TRUE | EXP13_.EXP
 SPPTERM | 2 | IV_TRUE | reg_count<7> | IV_FALSE | reg_pwm<7>
-SPPTERM | 3 | IV_TRUE | reg_count<6> | IV_FALSE | reg_pwm<6> | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
-SPPTERM | 4 | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
-SPPTERM | 4 | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<6> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
-SPPTERM | 5 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<4> | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
+SPPTERM | 3 | IV_TRUE | reg_count<6> | IV_FALSE | reg_pwm<6> | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
+SPPTERM | 4 | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
+SPPTERM | 4 | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<6> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
+SPPTERM | 5 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<4> | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
 
 SRFF_INSTANCE | pwm_out.REG | pwm_out | 0 | 3 | 1
 INPUT_NODE_TYPE | 0 | 8 | SRFF_D
-NODE | pwm_out.D | 1465 | ? | 0 | 0 | pwm_out | NULL | NULL | pwm_out.XOR | 0 | 7 | ALU_F
+NODE | pwm_out.D | 1632 | ? | 0 | 0 | pwm_out | NULL | NULL | pwm_out.XOR | 0 | 7 | ALU_F
 INPUT_NODE_TYPE | 1 | 8 | SRFF_C
-NODE | FCLKIO_0 | 1352 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_0 | 1521 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | clk_counter_IBUF | 3 | 5 | II_FCLK
 INPUT_NODE_TYPE | 3 | 8 | SRFF_R
-NODE | FSR-IO_2 | 1354 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
+NODE | FSR-IO_2 | 1523 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 9 | 5 | II_FSRINV
 OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
-NODE | pwm_out.Q | 1468 | ? | 0 | 0 | pwm_out | NULL | NULL | pwm_out.REG | 0 | 8 | SRFF_Q
+NODE | pwm_out.Q | 1635 | ? | 0 | 0 | pwm_out | NULL | NULL | pwm_out.REG | 0 | 8 | SRFF_Q
 
 INPUT_INSTANCE | 0 | 0 | NULL | number_0_IBUF | pwm_COPY_0_COPY_0 | 16 | 1 | 1
 INPUT_NODE_TYPE | 0 | 5 | II_IN
-NODE | number<0> | 1396 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
+NODE | number<0> | 1564 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
 OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
-NODE | number_0_IBUF | 1379 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_0_IBUF | 0 | 5 | II_IMUX
+NODE | number_0_IBUF | 1548 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_0_IBUF | 0 | 5 | II_IMUX
 
 MACROCELL_INSTANCE | PrldLow+OptxMapped | reg_pwm<0> | pwm_COPY_0_COPY_0 | 2155873280 | 3 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | number_0_IBUF | 1379 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_0_IBUF | 0 | 5 | II_IMUX
+NODE | number_0_IBUF | 1548 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_0_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | start_IBUF | 1353 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
+NODE | start_IBUF | 1522 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | FCLKIO_1 | 1364 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_1 | 1533 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
 OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
-NODE | reg_pwm<0> | 1380 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<0>.Q | reg_pwm<0> | 1 | 0 | MC_UIM
+NODE | reg_pwm<0> | 1549 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<0>.Q | reg_pwm<0> | 1 | 0 | MC_UIM
 
 SIGNAL_INSTANCE | reg_pwm<0>.SI | reg_pwm<0> | 0 | 2 | 3
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | number_0_IBUF | 1379 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_0_IBUF | 0 | 5 | II_IMUX
+NODE | number_0_IBUF | 1548 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | number_0_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | start_IBUF | 1353 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
+NODE | start_IBUF | 1522 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
 OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
-SIGNAL | NODE | reg_pwm<0>.D1 | 1470 | ? | 0 | 4096 | reg_pwm<0> | NULL | NULL | reg_pwm<0>.SI | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | reg_pwm<0>.D1 | 1637 | ? | 0 | 4096 | reg_pwm<0> | NULL | NULL | reg_pwm<0>.SI | 1 | 9 | MC_SI_D1
 SPPTERM | 0 | IV_ZERO
 OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
-SIGNAL | NODE | reg_pwm<0>.D2 | 1471 | ? | 0 | 4096 | reg_pwm<0> | NULL | NULL | reg_pwm<0>.SI | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | reg_pwm<0>.D2 | 1638 | ? | 0 | 4096 | reg_pwm<0> | NULL | NULL | reg_pwm<0>.SI | 2 | 9 | MC_SI_D2
 SPPTERM | 1 | IV_TRUE | number_0_IBUF
 OUTPUT_NODE_TYPE | 10 | 9 | MC_SI_CE
-SIGNAL | NODE | reg_pwm<0>.CE | 1472 | ? | 0 | 4096 | reg_pwm<0> | NULL | NULL | reg_pwm<0>.SI | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | reg_pwm<0>.CE | 1639 | ? | 0 | 4096 | reg_pwm<0> | NULL | NULL | reg_pwm<0>.SI | 10 | 9 | MC_SI_CE
 SPPTERM | 1 | IV_FALSE | start_IBUF
 
 SRFF_INSTANCE | reg_pwm<0>.REG | reg_pwm<0> | 0 | 3 | 1
 INPUT_NODE_TYPE | 0 | 8 | SRFF_D
-NODE | reg_pwm<0>.D | 1469 | ? | 0 | 0 | reg_pwm<0> | NULL | NULL | reg_pwm<0>.XOR | 0 | 7 | ALU_F
+NODE | reg_pwm<0>.D | 1636 | ? | 0 | 0 | reg_pwm<0> | NULL | NULL | reg_pwm<0>.XOR | 0 | 7 | ALU_F
 INPUT_NODE_TYPE | 1 | 8 | SRFF_C
-NODE | FCLKIO_1 | 1364 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
+NODE | FCLKIO_1 | 1533 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | lach_IBUF | 3 | 5 | II_FCLK
 INPUT_NODE_TYPE | 4 | 8 | SRFF_CE
-SIGNAL | NODE | reg_pwm<0>.CE | 1472 | ? | 0 | 4096 | reg_pwm<0> | NULL | NULL | reg_pwm<0>.SI | 10 | 9 | MC_SI_CE
+SIGNAL | NODE | reg_pwm<0>.CE | 1639 | ? | 0 | 4096 | reg_pwm<0> | NULL | NULL | reg_pwm<0>.SI | 10 | 9 | MC_SI_CE
 SPPTERM | 1 | IV_FALSE | start_IBUF
 OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
-NODE | reg_pwm<0>.Q | 1473 | ? | 0 | 0 | reg_pwm<0> | NULL | NULL | reg_pwm<0>.REG | 0 | 8 | SRFF_Q
+NODE | reg_pwm<0>.Q | 1640 | ? | 0 | 0 | reg_pwm<0> | NULL | NULL | reg_pwm<0>.REG | 0 | 8 | SRFF_Q
 
-INPUT_INSTANCE | 0 | 0 | NULL | select_source_laser_IBUF | pwm_COPY_0_COPY_0 | 16 | 1 | 1
-INPUT_NODE_TYPE | 0 | 5 | II_IN
-NODE | select_source_laser | 1397 | PI | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | NULL | 0 | 100 | NOTYPE
-OUTPUT_NODE_TYPE | 0 | 5 | II_IMUX
-NODE | select_source_laser_IBUF | 1381 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | select_source_laser_IBUF | 0 | 5 | II_IMUX
-
-MACROCELL_INSTANCE | Inv+OptxMapped | out_pwm_OBUF | pwm_COPY_0_COPY_0 | 2155872512 | 10 | 2
+MACROCELL_INSTANCE | OptxMapped | out_pwm_OBUF | pwm_COPY_0_COPY_0 | 2155872256 | 2 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | pwm_out | 1378 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | pwm_out.Q | pwm_out | 1 | 0 | MC_UIM
+NODE | start_IBUF | 1522 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | select_source_laser_IBUF | 1381 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | select_source_laser_IBUF | 0 | 5 | II_IMUX
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<4> | 1355 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<6> | 1356 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<3> | 1360 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<3> | 1375 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.Q | reg_pwm<3> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<5> | 1377 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<5>.Q | reg_pwm<5> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM | 1385 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$5_INV$175.Q | $OpTx$$OpTx$FX_DC$5_INV$175 | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<6> | 1367 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<4> | 1365 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
+NODE | pwm_out | 1547 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | pwm_out.Q | pwm_out | 1 | 0 | MC_UIM
 OUTPUT_NODE_TYPE | 0 | 0 | MC_Q
-NODE | out_pwm_OBUF | 1382 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | out_pwm_OBUF.Q | out_pwm_OBUF | 0 | 0 | MC_Q
-OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
-NODE | out_pwm_OBUF.EXP | 1492 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | out_pwm_OBUF.EXP | out_pwm_OBUF | 4 | 0 | MC_EXPORT
+NODE | out_pwm_OBUF | 1550 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | out_pwm_OBUF.Q | out_pwm_OBUF | 0 | 0 | MC_Q
 
-SIGNAL_INSTANCE | out_pwm_OBUF.SI | out_pwm_OBUF | 0 | 10 | 3
+SIGNAL_INSTANCE | out_pwm_OBUF.SI | out_pwm_OBUF | 0 | 2 | 2
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | pwm_out | 1378 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | pwm_out.Q | pwm_out | 1 | 0 | MC_UIM
+NODE | start_IBUF | 1522 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | start_IBUF | 0 | 5 | II_IMUX
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | select_source_laser_IBUF | 1381 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | select_source_laser_IBUF | 0 | 5 | II_IMUX
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<4> | 1355 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<6> | 1356 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<3> | 1360 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<3> | 1375 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.Q | reg_pwm<3> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<5> | 1377 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<5>.Q | reg_pwm<5> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM | 1385 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$5_INV$175.Q | $OpTx$$OpTx$FX_DC$5_INV$175 | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<6> | 1367 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<4> | 1365 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
+NODE | pwm_out | 1547 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | pwm_out.Q | pwm_out | 1 | 0 | MC_UIM
 OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
-SIGNAL | NODE | out_pwm_OBUF.D1 | 1475 | ? | 0 | 4096 | out_pwm_OBUF | NULL | NULL | out_pwm_OBUF.SI | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | out_pwm_OBUF.D1 | 1642 | ? | 0 | 4096 | out_pwm_OBUF | NULL | NULL | out_pwm_OBUF.SI | 1 | 9 | MC_SI_D1
 SPPTERM | 0 | IV_ZERO
 OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
-SIGNAL | NODE | out_pwm_OBUF.D2 | 1476 | ? | 0 | 4096 | out_pwm_OBUF | NULL | NULL | out_pwm_OBUF.SI | 2 | 9 | MC_SI_D2
-SPPTERM | 2 | IV_FALSE | pwm_out | IV_TRUE | select_source_laser_IBUF
-OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
-SIGNAL | NODE | out_pwm_OBUF.EXP | 1487 | ? | 0 | 0 | out_pwm_OBUF | NULL | NULL | out_pwm_OBUF.SI | 7 | 9 | MC_SI_EXPORT
-SPPTERM | 6 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<3> | IV_FALSE | reg_pwm<3> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
-SPPTERM | 6 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<3> | IV_FALSE | reg_pwm<6> | IV_FALSE | reg_pwm<3> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
-SPPTERM | 6 | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<3> | IV_FALSE | reg_pwm<4> | IV_FALSE | reg_pwm<3> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
-SPPTERM | 6 | IV_TRUE | reg_count<3> | IV_FALSE | reg_pwm<4> | IV_FALSE | reg_pwm<6> | IV_FALSE | reg_pwm<3> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
+SIGNAL | NODE | out_pwm_OBUF.D2 | 1643 | ? | 0 | 4096 | out_pwm_OBUF | NULL | NULL | out_pwm_OBUF.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 2 | IV_TRUE | start_IBUF | IV_TRUE | pwm_out
 
 SRFF_INSTANCE | out_pwm_OBUF.REG | out_pwm_OBUF | 0 | 1 | 1
 INPUT_NODE_TYPE | 0 | 8 | SRFF_D
-NODE | out_pwm_OBUF.D | 1474 | ? | 0 | 0 | out_pwm_OBUF | NULL | NULL | out_pwm_OBUF.XOR | 0 | 7 | ALU_F
+NODE | out_pwm_OBUF.D | 1641 | ? | 0 | 0 | out_pwm_OBUF | NULL | NULL | out_pwm_OBUF.XOR | 0 | 7 | ALU_F
 OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
-NODE | out_pwm_OBUF.Q | 1477 | ? | 0 | 0 | out_pwm_OBUF | NULL | NULL | out_pwm_OBUF.REG | 0 | 8 | SRFF_Q
+NODE | out_pwm_OBUF.Q | 1644 | ? | 0 | 0 | out_pwm_OBUF | NULL | NULL | out_pwm_OBUF.REG | 0 | 8 | SRFF_Q
 
 OUTPUT_INSTANCE | 0 | out_pwm | pwm_COPY_0_COPY_0 | 7 | 1 | 1
 INPUT_NODE_TYPE | 0 | 6 | OI_IN
-NODE | out_pwm_OBUF | 1382 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | out_pwm_OBUF.Q | out_pwm_OBUF | 0 | 0 | MC_Q
+NODE | out_pwm_OBUF | 1550 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | out_pwm_OBUF.Q | out_pwm_OBUF | 0 | 0 | MC_Q
 OUTPUT_NODE_TYPE | 0 | 6 | OI_OUT
-NODE | out_pwm | 1383 | PO | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | out_pwm | 0 | 6 | OI_OUT
+NODE | out_pwm | 1551 | PO | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | NULL | out_pwm | 0 | 6 | OI_OUT
 
-MACROCELL_INSTANCE | SoftPfbk | $OpTx$INV$3 | pwm_COPY_0_COPY_0 | 2181038080 | 9 | 1
+MACROCELL_INSTANCE | SoftPfbk | $OpTx$INV$11 | pwm_COPY_0_COPY_0 | 2181038080 | 10 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<2> | 1359 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<2> | 1373 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<2>.Q | reg_pwm<2> | 1 | 0 | MC_UIM
+NODE | reg_pwm<2> | 1542 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<2>.Q | reg_pwm<2> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<4> | 1355 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<4> | 1365 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
+NODE | reg_pwm<4> | 1534 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<1> | 1358 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<1> | 1371 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<1>.Q | reg_pwm<1> | 1 | 0 | MC_UIM
+NODE | reg_pwm<1> | 1540 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<1>.Q | reg_pwm<1> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<0> | 1357 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<0> | 1380 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<0>.Q | reg_pwm<0> | 1 | 0 | MC_UIM
+NODE | reg_pwm<0> | 1549 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<0>.Q | reg_pwm<0> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | EXP5_.EXP | 1493 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP5_.EXP | EXP5_ | 4 | 0 | MC_EXPORT
+NODE | EXP10_.EXP | 1657 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP10_.EXP | EXP10_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<3>.EXP | 1658 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.EXP | reg_pwm<3> | 4 | 0 | MC_EXPORT
 OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
-NODE | $OpTx$INV$3.UIM | 1384 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$INV$3.Q | $OpTx$INV$3 | 1 | 0 | MC_UIM
+NODE | $OpTx$INV$11.UIM | 1552 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$INV$11.Q | $OpTx$INV$11 | 1 | 0 | MC_UIM
 
-SIGNAL_INSTANCE | $OpTx$INV$3.SI | $OpTx$INV$3 | 0 | 9 | 2
+SIGNAL_INSTANCE | $OpTx$INV$11.SI | $OpTx$INV$11 | 0 | 10 | 2
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<2> | 1359 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
+NODE | reg_count<2> | 1527 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<2> | 1373 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<2>.Q | reg_pwm<2> | 1 | 0 | MC_UIM
+NODE | reg_pwm<2> | 1542 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<2>.Q | reg_pwm<2> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<4> | 1355 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<4> | 1365 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
+NODE | reg_pwm<4> | 1534 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<1> | 1358 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
+NODE | reg_count<1> | 1526 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<1> | 1371 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<1>.Q | reg_pwm<1> | 1 | 0 | MC_UIM
+NODE | reg_pwm<1> | 1540 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<1>.Q | reg_pwm<1> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<0> | 1357 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<0> | 1380 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<0>.Q | reg_pwm<0> | 1 | 0 | MC_UIM
+NODE | reg_pwm<0> | 1549 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<0>.Q | reg_pwm<0> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | EXP5_.EXP | 1493 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP5_.EXP | EXP5_ | 4 | 0 | MC_EXPORT
+NODE | EXP10_.EXP | 1657 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP10_.EXP | EXP10_ | 4 | 0 | MC_EXPORT
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<3>.EXP | 1658 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.EXP | reg_pwm<3> | 4 | 0 | MC_EXPORT
 OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
-SIGNAL | NODE | $OpTx$INV$3.D1 | 1479 | ? | 0 | 4096 | $OpTx$INV$3 | NULL | NULL | $OpTx$INV$3.SI | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | $OpTx$INV$11.D1 | 1646 | ? | 0 | 4096 | $OpTx$INV$11 | NULL | NULL | $OpTx$INV$11.SI | 1 | 9 | MC_SI_D1
 SPPTERM | 0 | IV_ZERO
 OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
-SIGNAL | NODE | $OpTx$INV$3.D2 | 1480 | ? | 0 | 4096 | $OpTx$INV$3 | NULL | NULL | $OpTx$INV$3.SI | 2 | 9 | MC_SI_D2
-SPPTERM | 1 | IV_TRUE | EXP5_.EXP
+SIGNAL | NODE | $OpTx$INV$11.D2 | 1647 | ? | 0 | 4096 | $OpTx$INV$11 | NULL | NULL | $OpTx$INV$11.SI | 2 | 9 | MC_SI_D2
+SPPTERM | 1 | IV_TRUE | EXP10_.EXP
+SPPTERM | 1 | IV_TRUE | reg_pwm<3>.EXP
 SPPTERM | 2 | IV_FALSE | reg_count<4> | IV_TRUE | reg_pwm<4>
 SPPTERM | 2 | IV_FALSE | reg_count<2> | IV_TRUE | reg_pwm<2>
 SPPTERM | 3 | IV_FALSE | reg_count<1> | IV_FALSE | reg_count<2> | IV_TRUE | reg_pwm<1>
 SPPTERM | 3 | IV_FALSE | reg_count<1> | IV_TRUE | reg_pwm<1> | IV_TRUE | reg_pwm<2>
-SPPTERM | 4 | IV_FALSE | reg_count<0> | IV_FALSE | reg_count<1> | IV_FALSE | reg_count<2> | IV_TRUE | reg_pwm<0>
+SPPTERM | 4 | IV_FALSE | reg_count<1> | IV_FALSE | reg_count<2> | IV_FALSE | reg_count<0> | IV_TRUE | reg_pwm<0>
 
-SRFF_INSTANCE | $OpTx$INV$3.REG | $OpTx$INV$3 | 0 | 1 | 1
+SRFF_INSTANCE | $OpTx$INV$11.REG | $OpTx$INV$11 | 0 | 1 | 1
 INPUT_NODE_TYPE | 0 | 8 | SRFF_D
-NODE | $OpTx$INV$3.D | 1478 | ? | 0 | 0 | $OpTx$INV$3 | NULL | NULL | $OpTx$INV$3.XOR | 0 | 7 | ALU_F
+NODE | $OpTx$INV$11.D | 1645 | ? | 0 | 0 | $OpTx$INV$11 | NULL | NULL | $OpTx$INV$11.XOR | 0 | 7 | ALU_F
 OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
-NODE | $OpTx$INV$3.Q | 1481 | ? | 0 | 0 | $OpTx$INV$3 | NULL | NULL | $OpTx$INV$3.REG | 0 | 8 | SRFF_Q
+NODE | $OpTx$INV$11.Q | 1648 | ? | 0 | 0 | $OpTx$INV$11 | NULL | NULL | $OpTx$INV$11.REG | 0 | 8 | SRFF_Q
 
-MACROCELL_INSTANCE | SoftPfbk | $OpTx$$OpTx$FX_DC$5_INV$175 | pwm_COPY_0_COPY_0 | 2181038080 | 2 | 1
+MACROCELL_INSTANCE | SoftPfbk | $OpTx$$OpTx$FX_DC$13_INV$183 | pwm_COPY_0_COPY_0 | 2181038080 | 2 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<7> | 1362 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<7> | 1369 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<7>.Q | reg_pwm<7> | 1 | 0 | MC_UIM
+NODE | reg_pwm<7> | 1538 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<7>.Q | reg_pwm<7> | 1 | 0 | MC_UIM
 OUTPUT_NODE_TYPE | 1 | 0 | MC_UIM
-NODE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM | 1385 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$5_INV$175.Q | $OpTx$$OpTx$FX_DC$5_INV$175 | 1 | 0 | MC_UIM
+NODE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM | 1553 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$13_INV$183.Q | $OpTx$$OpTx$FX_DC$13_INV$183 | 1 | 0 | MC_UIM
 
-SIGNAL_INSTANCE | $OpTx$$OpTx$FX_DC$5_INV$175.SI | $OpTx$$OpTx$FX_DC$5_INV$175 | 0 | 2 | 2
+SIGNAL_INSTANCE | $OpTx$$OpTx$FX_DC$13_INV$183.SI | $OpTx$$OpTx$FX_DC$13_INV$183 | 0 | 2 | 2
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<7> | 1362 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
+NODE | reg_count<7> | 1530 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<7>.Q | reg_count<7> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<7> | 1369 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<7>.Q | reg_pwm<7> | 1 | 0 | MC_UIM
+NODE | reg_pwm<7> | 1538 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<7>.Q | reg_pwm<7> | 1 | 0 | MC_UIM
 OUTPUT_NODE_TYPE | 1 | 9 | MC_SI_D1
-SIGNAL | NODE | $OpTx$$OpTx$FX_DC$5_INV$175.D1 | 1483 | ? | 0 | 4096 | $OpTx$$OpTx$FX_DC$5_INV$175 | NULL | NULL | $OpTx$$OpTx$FX_DC$5_INV$175.SI | 1 | 9 | MC_SI_D1
+SIGNAL | NODE | $OpTx$$OpTx$FX_DC$13_INV$183.D1 | 1650 | ? | 0 | 4096 | $OpTx$$OpTx$FX_DC$13_INV$183 | NULL | NULL | $OpTx$$OpTx$FX_DC$13_INV$183.SI | 1 | 9 | MC_SI_D1
 SPPTERM | 0 | IV_ZERO
 OUTPUT_NODE_TYPE | 2 | 9 | MC_SI_D2
-SIGNAL | NODE | $OpTx$$OpTx$FX_DC$5_INV$175.D2 | 1484 | ? | 0 | 4096 | $OpTx$$OpTx$FX_DC$5_INV$175 | NULL | NULL | $OpTx$$OpTx$FX_DC$5_INV$175.SI | 2 | 9 | MC_SI_D2
+SIGNAL | NODE | $OpTx$$OpTx$FX_DC$13_INV$183.D2 | 1651 | ? | 0 | 4096 | $OpTx$$OpTx$FX_DC$13_INV$183 | NULL | NULL | $OpTx$$OpTx$FX_DC$13_INV$183.SI | 2 | 9 | MC_SI_D2
 SPPTERM | 2 | IV_FALSE | reg_count<7> | IV_TRUE | reg_pwm<7>
 
-SRFF_INSTANCE | $OpTx$$OpTx$FX_DC$5_INV$175.REG | $OpTx$$OpTx$FX_DC$5_INV$175 | 0 | 1 | 1
+SRFF_INSTANCE | $OpTx$$OpTx$FX_DC$13_INV$183.REG | $OpTx$$OpTx$FX_DC$13_INV$183 | 0 | 1 | 1
 INPUT_NODE_TYPE | 0 | 8 | SRFF_D
-NODE | $OpTx$$OpTx$FX_DC$5_INV$175.D | 1482 | ? | 0 | 0 | $OpTx$$OpTx$FX_DC$5_INV$175 | NULL | NULL | $OpTx$$OpTx$FX_DC$5_INV$175.XOR | 0 | 7 | ALU_F
+NODE | $OpTx$$OpTx$FX_DC$13_INV$183.D | 1649 | ? | 0 | 0 | $OpTx$$OpTx$FX_DC$13_INV$183 | NULL | NULL | $OpTx$$OpTx$FX_DC$13_INV$183.XOR | 0 | 7 | ALU_F
 OUTPUT_NODE_TYPE | 0 | 8 | SRFF_Q
-NODE | $OpTx$$OpTx$FX_DC$5_INV$175.Q | 1485 | ? | 0 | 0 | $OpTx$$OpTx$FX_DC$5_INV$175 | NULL | NULL | $OpTx$$OpTx$FX_DC$5_INV$175.REG | 0 | 8 | SRFF_Q
+NODE | $OpTx$$OpTx$FX_DC$13_INV$183.Q | 1652 | ? | 0 | 0 | $OpTx$$OpTx$FX_DC$13_INV$183 | NULL | NULL | $OpTx$$OpTx$FX_DC$13_INV$183.REG | 0 | 8 | SRFF_Q
 
-MACROCELL_INSTANCE | NULL | EXP4_ | pwm_COPY_0_COPY_0 | 2147483648 | 10 | 1
+MACROCELL_INSTANCE | NULL | EXP10_ | pwm_COPY_0_COPY_0 | 2147483648 | 4 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<4> | 1355 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<6> | 1356 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
+NODE | reg_pwm<1> | 1540 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<1>.Q | reg_pwm<1> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<4> | 1365 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
+NODE | reg_pwm<2> | 1542 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<2>.Q | reg_pwm<2> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<5> | 1377 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<5>.Q | reg_pwm<5> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM | 1385 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$5_INV$175.Q | $OpTx$$OpTx$FX_DC$5_INV$175 | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<6> | 1367 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<3> | 1360 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | $OpTx$INV$3.UIM | 1384 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$INV$3.Q | $OpTx$INV$3 | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<3> | 1375 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.Q | reg_pwm<3> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | out_pwm_OBUF.EXP | 1492 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | out_pwm_OBUF.EXP | out_pwm_OBUF | 4 | 0 | MC_EXPORT
+NODE | reg_pwm<0> | 1549 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<0>.Q | reg_pwm<0> | 1 | 0 | MC_UIM
 OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
-NODE | EXP4_.EXP | 1491 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP4_.EXP | EXP4_ | 4 | 0 | MC_EXPORT
+NODE | EXP10_.EXP | 1657 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP10_.EXP | EXP10_ | 4 | 0 | MC_EXPORT
 
-SIGNAL_INSTANCE | EXP4_.SI | EXP4_ | 0 | 10 | 1
+SIGNAL_INSTANCE | EXP10_.SI | EXP10_ | 0 | 4 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<4> | 1355 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+NODE | reg_count<0> | 1531 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<6> | 1356 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
+NODE | reg_pwm<1> | 1540 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<1>.Q | reg_pwm<1> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<4> | 1365 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
+NODE | reg_pwm<2> | 1542 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<2>.Q | reg_pwm<2> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<5> | 1377 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<5>.Q | reg_pwm<5> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM | 1385 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$5_INV$175.Q | $OpTx$$OpTx$FX_DC$5_INV$175 | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<6> | 1367 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<3> | 1360 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | $OpTx$INV$3.UIM | 1384 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$INV$3.Q | $OpTx$INV$3 | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<3> | 1375 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.Q | reg_pwm<3> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | out_pwm_OBUF.EXP | 1492 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | out_pwm_OBUF.EXP | out_pwm_OBUF | 4 | 0 | MC_EXPORT
+NODE | reg_pwm<0> | 1549 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<0>.Q | reg_pwm<0> | 1 | 0 | MC_UIM
 OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
-SIGNAL | NODE | EXP4_.EXP | 1486 | ? | 0 | 0 | EXP4_ | NULL | NULL | EXP4_.SI | 7 | 9 | MC_SI_EXPORT
-SPPTERM | 1 | IV_TRUE | out_pwm_OBUF.EXP
-SPPTERM | 5 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<6> | IV_FALSE | reg_pwm<4> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
-SPPTERM | 5 | IV_TRUE | reg_count<4> | IV_FALSE | reg_pwm<4> | IV_FALSE | reg_pwm<6> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
-SPPTERM | 5 | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<3> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$INV$3.UIM | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
-SPPTERM | 5 | IV_TRUE | reg_count<6> | IV_FALSE | reg_pwm<3> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$INV$3.UIM | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
-SPPTERM | 5 | IV_FALSE | reg_pwm<6> | IV_FALSE | reg_pwm<3> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$INV$3.UIM | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
-
-MACROCELL_INSTANCE | NULL | EXP5_ | pwm_COPY_0_COPY_0 | 2147483648 | 6 | 1
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<0> | 1357 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<1> | 1358 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<2> | 1373 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<2>.Q | reg_pwm<2> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<0> | 1380 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<0>.Q | reg_pwm<0> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<2> | 1359 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<1> | 1371 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<1>.Q | reg_pwm<1> | 1 | 0 | MC_UIM
-OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
-NODE | EXP5_.EXP | 1493 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP5_.EXP | EXP5_ | 4 | 0 | MC_EXPORT
-
-SIGNAL_INSTANCE | EXP5_.SI | EXP5_ | 0 | 6 | 1
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<0> | 1357 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<0>.Q | reg_count<0> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<1> | 1358 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<1>.Q | reg_count<1> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<2> | 1373 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<2>.Q | reg_pwm<2> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<0> | 1380 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<0>.Q | reg_pwm<0> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<2> | 1359 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<2>.Q | reg_count<2> | 1 | 0 | MC_UIM
-INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<1> | 1371 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<1>.Q | reg_pwm<1> | 1 | 0 | MC_UIM
-OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
-SIGNAL | NODE | EXP5_.EXP | 1488 | ? | 0 | 0 | EXP5_ | NULL | NULL | EXP5_.SI | 7 | 9 | MC_SI_EXPORT
-SPPTERM | 4 | IV_FALSE | reg_count<0> | IV_FALSE | reg_count<1> | IV_TRUE | reg_pwm<2> | IV_TRUE | reg_pwm<0>
-SPPTERM | 4 | IV_FALSE | reg_count<0> | IV_FALSE | reg_count<2> | IV_TRUE | reg_pwm<1> | IV_TRUE | reg_pwm<0>
+SIGNAL | NODE | EXP10_.EXP | 1655 | ? | 0 | 0 | EXP10_ | NULL | NULL | EXP10_.SI | 7 | 9 | MC_SI_EXPORT
 SPPTERM | 4 | IV_FALSE | reg_count<0> | IV_TRUE | reg_pwm<1> | IV_TRUE | reg_pwm<2> | IV_TRUE | reg_pwm<0>
 
-MACROCELL_INSTANCE | NULL | EXP6_ | pwm_COPY_0_COPY_0 | 2147483648 | 10 | 1
+MACROCELL_INSTANCE | NULL | EXP11_ | pwm_COPY_0_COPY_0 | 2147483648 | 10 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<3> | 1360 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<6> | 1367 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
+NODE | reg_pwm<6> | 1536 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<5> | 1377 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<5>.Q | reg_pwm<5> | 1 | 0 | MC_UIM
+NODE | reg_pwm<5> | 1546 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<5>.Q | reg_pwm<5> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | $OpTx$INV$3.UIM | 1384 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$INV$3.Q | $OpTx$INV$3 | 1 | 0 | MC_UIM
+NODE | $OpTx$INV$11.UIM | 1552 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$INV$11.Q | $OpTx$INV$11 | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM | 1385 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$5_INV$175.Q | $OpTx$$OpTx$FX_DC$5_INV$175 | 1 | 0 | MC_UIM
+NODE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM | 1553 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$13_INV$183.Q | $OpTx$$OpTx$FX_DC$13_INV$183 | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<4> | 1355 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<6> | 1356 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<5> | 1361 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
+NODE | reg_count<5> | 1529 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<3> | 1375 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.Q | reg_pwm<3> | 1 | 0 | MC_UIM
+NODE | reg_pwm<3> | 1544 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.Q | reg_pwm<3> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<4> | 1365 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
+NODE | reg_pwm<4> | 1534 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
 OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
-NODE | EXP6_.EXP | 1494 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP6_.EXP | EXP6_ | 4 | 0 | MC_EXPORT
+NODE | EXP11_.EXP | 1663 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP11_.EXP | EXP11_ | 4 | 0 | MC_EXPORT
 
-SIGNAL_INSTANCE | EXP6_.SI | EXP6_ | 0 | 10 | 1
+SIGNAL_INSTANCE | EXP11_.SI | EXP11_ | 0 | 10 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<3> | 1360 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<6> | 1367 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
+NODE | reg_pwm<6> | 1536 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<5> | 1377 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<5>.Q | reg_pwm<5> | 1 | 0 | MC_UIM
+NODE | reg_pwm<5> | 1546 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<5>.Q | reg_pwm<5> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | $OpTx$INV$3.UIM | 1384 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$INV$3.Q | $OpTx$INV$3 | 1 | 0 | MC_UIM
+NODE | $OpTx$INV$11.UIM | 1552 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$INV$11.Q | $OpTx$INV$11 | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM | 1385 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$5_INV$175.Q | $OpTx$$OpTx$FX_DC$5_INV$175 | 1 | 0 | MC_UIM
+NODE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM | 1553 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$13_INV$183.Q | $OpTx$$OpTx$FX_DC$13_INV$183 | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<4> | 1355 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<6> | 1356 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<5> | 1361 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
+NODE | reg_count<5> | 1529 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<3> | 1375 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.Q | reg_pwm<3> | 1 | 0 | MC_UIM
+NODE | reg_pwm<3> | 1544 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.Q | reg_pwm<3> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<4> | 1365 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
+NODE | reg_pwm<4> | 1534 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
 OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
-SIGNAL | NODE | EXP6_.EXP | 1489 | ? | 0 | 0 | EXP6_ | NULL | NULL | EXP6_.SI | 7 | 9 | MC_SI_EXPORT
-SPPTERM | 5 | IV_TRUE | reg_count<3> | IV_FALSE | reg_pwm<6> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$INV$3.UIM | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
-SPPTERM | 6 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<3> | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<3> | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
-SPPTERM | 6 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<3> | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<6> | IV_FALSE | reg_pwm<3> | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
-SPPTERM | 6 | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<3> | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<4> | IV_FALSE | reg_pwm<3> | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
-SPPTERM | 6 | IV_TRUE | reg_count<3> | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<4> | IV_FALSE | reg_pwm<6> | IV_FALSE | reg_pwm<3> | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
+SIGNAL | NODE | EXP11_.EXP | 1659 | ? | 0 | 0 | EXP11_ | NULL | NULL | EXP11_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 5 | IV_TRUE | reg_count<3> | IV_FALSE | reg_pwm<6> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$INV$11.UIM | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
+SPPTERM | 6 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<3> | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<3> | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
+SPPTERM | 6 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<3> | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<6> | IV_FALSE | reg_pwm<3> | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
+SPPTERM | 6 | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<3> | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<4> | IV_FALSE | reg_pwm<3> | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
 
-MACROCELL_INSTANCE | NULL | EXP7_ | pwm_COPY_0_COPY_0 | 2147483648 | 10 | 1
+MACROCELL_INSTANCE | NULL | EXP12_ | pwm_COPY_0_COPY_0 | 2147483648 | 10 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<4> | 1355 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<5> | 1361 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
+NODE | reg_count<5> | 1529 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<4> | 1365 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
+NODE | reg_pwm<4> | 1534 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<6> | 1367 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
+NODE | reg_pwm<6> | 1536 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM | 1385 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$5_INV$175.Q | $OpTx$$OpTx$FX_DC$5_INV$175 | 1 | 0 | MC_UIM
+NODE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM | 1553 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$13_INV$183.Q | $OpTx$$OpTx$FX_DC$13_INV$183 | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<6> | 1356 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<3> | 1360 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | $OpTx$INV$3.UIM | 1384 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$INV$3.Q | $OpTx$INV$3 | 1 | 0 | MC_UIM
+NODE | $OpTx$INV$11.UIM | 1552 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$INV$11.Q | $OpTx$INV$11 | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<3> | 1375 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.Q | reg_pwm<3> | 1 | 0 | MC_UIM
+NODE | reg_pwm<3> | 1544 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.Q | reg_pwm<3> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | EXP6_.EXP | 1494 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP6_.EXP | EXP6_ | 4 | 0 | MC_EXPORT
+NODE | EXP11_.EXP | 1663 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP11_.EXP | EXP11_ | 4 | 0 | MC_EXPORT
 OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
-NODE | EXP7_.EXP | 1495 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP7_.EXP | EXP7_ | 4 | 0 | MC_EXPORT
+NODE | EXP12_.EXP | 1664 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP12_.EXP | EXP12_ | 4 | 0 | MC_EXPORT
 
-SIGNAL_INSTANCE | EXP7_.SI | EXP7_ | 0 | 10 | 1
+SIGNAL_INSTANCE | EXP12_.SI | EXP12_ | 0 | 10 | 1
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<4> | 1355 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<5> | 1361 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
+NODE | reg_count<5> | 1529 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<4> | 1365 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
+NODE | reg_pwm<4> | 1534 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<6> | 1367 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
+NODE | reg_pwm<6> | 1536 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM | 1385 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$5_INV$175.Q | $OpTx$$OpTx$FX_DC$5_INV$175 | 1 | 0 | MC_UIM
+NODE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM | 1553 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$13_INV$183.Q | $OpTx$$OpTx$FX_DC$13_INV$183 | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<6> | 1356 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_count<3> | 1360 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | $OpTx$INV$3.UIM | 1384 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$INV$3.Q | $OpTx$INV$3 | 1 | 0 | MC_UIM
+NODE | $OpTx$INV$11.UIM | 1552 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$INV$11.Q | $OpTx$INV$11 | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | reg_pwm<3> | 1375 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.Q | reg_pwm<3> | 1 | 0 | MC_UIM
+NODE | reg_pwm<3> | 1544 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.Q | reg_pwm<3> | 1 | 0 | MC_UIM
 INPUT_NODE_TYPE | 1 | 100 | NOTYPE
-NODE | EXP6_.EXP | 1494 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP6_.EXP | EXP6_ | 4 | 0 | MC_EXPORT
+NODE | EXP11_.EXP | 1663 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP11_.EXP | EXP11_ | 4 | 0 | MC_EXPORT
 OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
-SIGNAL | NODE | EXP7_.EXP | 1490 | ? | 0 | 0 | EXP7_ | NULL | NULL | EXP7_.SI | 7 | 9 | MC_SI_EXPORT
-SPPTERM | 1 | IV_TRUE | EXP6_.EXP
-SPPTERM | 5 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<4> | IV_FALSE | reg_pwm<6> | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
-SPPTERM | 5 | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<3> | IV_TRUE | reg_count<5> | IV_FALSE | $OpTx$INV$3.UIM | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
-SPPTERM | 5 | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<3> | IV_FALSE | $OpTx$INV$3.UIM | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
-SPPTERM | 5 | IV_TRUE | reg_count<3> | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<6> | IV_FALSE | $OpTx$INV$3.UIM | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
-SPPTERM | 5 | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<6> | IV_FALSE | reg_pwm<3> | IV_FALSE | $OpTx$INV$3.UIM | IV_FALSE | $OpTx$$OpTx$FX_DC$5_INV$175.UIM
+SIGNAL | NODE | EXP12_.EXP | 1660 | ? | 0 | 0 | EXP12_ | NULL | NULL | EXP12_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 1 | IV_TRUE | EXP11_.EXP
+SPPTERM | 5 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<4> | IV_FALSE | reg_pwm<6> | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
+SPPTERM | 5 | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<3> | IV_TRUE | reg_count<5> | IV_FALSE | $OpTx$INV$11.UIM | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
+SPPTERM | 5 | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<3> | IV_FALSE | $OpTx$INV$11.UIM | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
+SPPTERM | 5 | IV_TRUE | reg_count<3> | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<6> | IV_FALSE | $OpTx$INV$11.UIM | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
+SPPTERM | 5 | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<6> | IV_FALSE | reg_pwm<3> | IV_FALSE | $OpTx$INV$11.UIM | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
+
+MACROCELL_INSTANCE | NULL | EXP13_ | pwm_COPY_0_COPY_0 | 2147483648 | 10 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<4> | 1534 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<5> | 1546 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<5>.Q | reg_pwm<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM | 1553 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$13_INV$183.Q | $OpTx$$OpTx$FX_DC$13_INV$183 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<6> | 1536 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | $OpTx$INV$11.UIM | 1552 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$INV$11.Q | $OpTx$INV$11 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<3> | 1544 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.Q | reg_pwm<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP14_.EXP | 1666 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP14_.EXP | EXP14_ | 4 | 0 | MC_EXPORT
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | EXP13_.EXP | 1665 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP13_.EXP | EXP13_ | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | EXP13_.SI | EXP13_ | 0 | 10 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<4> | 1534 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<5> | 1546 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<5>.Q | reg_pwm<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM | 1553 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$13_INV$183.Q | $OpTx$$OpTx$FX_DC$13_INV$183 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<6> | 1536 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | $OpTx$INV$11.UIM | 1552 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$INV$11.Q | $OpTx$INV$11 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<3> | 1544 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.Q | reg_pwm<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | EXP14_.EXP | 1666 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP14_.EXP | EXP14_ | 4 | 0 | MC_EXPORT
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | EXP13_.EXP | 1661 | ? | 0 | 0 | EXP13_ | NULL | NULL | EXP13_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 1 | IV_TRUE | EXP14_.EXP
+SPPTERM | 5 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<6> | IV_FALSE | reg_pwm<4> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
+SPPTERM | 5 | IV_TRUE | reg_count<4> | IV_FALSE | reg_pwm<4> | IV_FALSE | reg_pwm<6> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
+SPPTERM | 5 | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<3> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$INV$11.UIM | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
+SPPTERM | 5 | IV_TRUE | reg_count<6> | IV_FALSE | reg_pwm<3> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$INV$11.UIM | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
+SPPTERM | 5 | IV_FALSE | reg_pwm<6> | IV_FALSE | reg_pwm<3> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$INV$11.UIM | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
+
+MACROCELL_INSTANCE | NULL | EXP14_ | pwm_COPY_0_COPY_0 | 2147483648 | 9 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<3> | 1544 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.Q | reg_pwm<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<5> | 1546 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<5>.Q | reg_pwm<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM | 1553 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$13_INV$183.Q | $OpTx$$OpTx$FX_DC$13_INV$183 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<6> | 1536 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<4> | 1534 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<5> | 1529 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 4 | 0 | MC_EXPORT
+NODE | EXP14_.EXP | 1666 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | EXP14_.EXP | EXP14_ | 4 | 0 | MC_EXPORT
+
+SIGNAL_INSTANCE | EXP14_.SI | EXP14_ | 0 | 9 | 1
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<4> | 1524 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<4>.Q | reg_count<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<6> | 1525 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<6>.Q | reg_count<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<3> | 1528 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<3>.Q | reg_count<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<3> | 1544 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<3>.Q | reg_pwm<3> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<5> | 1546 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<5>.Q | reg_pwm<5> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM | 1553 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | $OpTx$$OpTx$FX_DC$13_INV$183.Q | $OpTx$$OpTx$FX_DC$13_INV$183 | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<6> | 1536 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<6>.Q | reg_pwm<6> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_pwm<4> | 1534 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_pwm<4>.Q | reg_pwm<4> | 1 | 0 | MC_UIM
+INPUT_NODE_TYPE | 1 | 100 | NOTYPE
+NODE | reg_count<5> | 1529 | ? | 0 | 0 | pwm_COPY_0_COPY_0 | NULL | reg_count<5>.Q | reg_count<5> | 1 | 0 | MC_UIM
+OUTPUT_NODE_TYPE | 7 | 9 | MC_SI_EXPORT
+SIGNAL | NODE | EXP14_.EXP | 1662 | ? | 0 | 0 | EXP14_ | NULL | NULL | EXP14_.SI | 7 | 9 | MC_SI_EXPORT
+SPPTERM | 6 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<3> | IV_FALSE | reg_pwm<3> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
+SPPTERM | 6 | IV_TRUE | reg_count<4> | IV_TRUE | reg_count<3> | IV_FALSE | reg_pwm<6> | IV_FALSE | reg_pwm<3> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
+SPPTERM | 6 | IV_TRUE | reg_count<6> | IV_TRUE | reg_count<3> | IV_FALSE | reg_pwm<4> | IV_FALSE | reg_pwm<3> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
+SPPTERM | 6 | IV_TRUE | reg_count<3> | IV_TRUE | reg_count<5> | IV_FALSE | reg_pwm<4> | IV_FALSE | reg_pwm<6> | IV_FALSE | reg_pwm<3> | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
+SPPTERM | 6 | IV_TRUE | reg_count<3> | IV_FALSE | reg_pwm<4> | IV_FALSE | reg_pwm<6> | IV_FALSE | reg_pwm<3> | IV_FALSE | reg_pwm<5> | IV_FALSE | $OpTx$$OpTx$FX_DC$13_INV$183.UIM
 
 FB_INSTANCE | FOOBAR1_ | pwm_COPY_0_COPY_0 | 0 | 0 | 0
-FBPIN | 1 | NULL | 0 | number_7_IBUF | 1 | NULL | 0 | 2 | 49152
-FBPIN | 3 | NULL | 0 | clk_counter_IBUF | 1 | NULL | 0 | 5 | 57344
-FBPIN | 5 | NULL | 0 | lach_IBUF | 1 | NULL | 0 | 6 | 57344
-FBPIN | 10 | reg_count<0> | 1 | NULL | 0 | NULL | 0 | 12 | 49152
-FBPIN | 11 | reg_pwm<7> | 1 | NULL | 0 | NULL | 0 | 13 | 49152
-FBPIN | 12 | reg_pwm<6> | 1 | NULL | 0 | NULL | 0 | 14 | 49152
-FBPIN | 13 | reg_pwm<5> | 1 | NULL | 0 | NULL | 0 | 18 | 49152
-FBPIN | 14 | reg_pwm<4> | 1 | NULL | 0 | NULL | 0 | 19 | 49152
-FBPIN | 15 | reg_pwm<3> | 1 | NULL | 0 | NULL | 0 | 20 | 49152
-FBPIN | 16 | reg_pwm<2> | 1 | NULL | 0 | NULL | 0 | 22 | 49152
-FBPIN | 17 | reg_pwm<1> | 1 | NULL | 0 | NULL | 0 | 24 | 49152
-FBPIN | 18 | reg_pwm<0> | 1 | NULL | 0 | NULL | 0
+FBPIN | 2 | out_pwm_OBUF | 1 | NULL | 0 | out_pwm | 1 | 11 | 49152
+FBPIN | 6 | NULL | 0 | number_2_IBUF | 1 | NULL | 0 | 14 | 49152
+FBPIN | 9 | reg_pwm<1> | 1 | NULL | 0 | NULL | 0 | 16 | 49152
+FBPIN | 10 | reg_pwm<0> | 1 | NULL | 0 | NULL | 0
+FBPIN | 11 | reg_count<7> | 1 | NULL | 0 | NULL | 0 | 17 | 49152
+FBPIN | 12 | reg_count<5> | 1 | NULL | 0 | NULL | 0 | 18 | 49152
+FBPIN | 13 | reg_count<4> | 1 | NULL | 0 | NULL | 0
+FBPIN | 14 | reg_count<3> | 1 | NULL | 0 | NULL | 0 | 19 | 49152
+FBPIN | 15 | reg_count<2> | 1 | NULL | 0 | NULL | 0 | 20 | 49152
+FBPIN | 16 | reg_count<0> | 1 | NULL | 0 | NULL | 0
+FBPIN | 17 | reg_count<1> | 1 | clk_counter_IBUF | 1 | NULL | 0 | 22 | 57344
+FBPIN | 18 | reg_count<6> | 1 | NULL | 0 | NULL | 0
 
 FB_INSTANCE | FOOBAR2_ | pwm_COPY_0_COPY_0 | 0 | 0 | 0
-FBPIN | 1 | EXP4_ | 1 | number_6_IBUF | 1 | NULL | 0 | 1 | 49152
-FBPIN | 2 | out_pwm_OBUF | 1 | NULL | 0 | out_pwm | 1 | 44 | 49152
-FBPIN | 3 | $OpTx$INV$3 | 1 | number_4_IBUF | 1 | NULL | 0 | 42 | 53248
-FBPIN | 4 | EXP5_ | 1 | NULL | 0 | NULL | 0 | 43 | 49152
-FBPIN | 5 | NULL | 0 | number_3_IBUF | 1 | NULL | 0 | 40 | 53248
-FBPIN | 6 | NULL | 0 | start_IBUF | 1 | NULL | 0 | 39 | 51200
-FBPIN | 8 | reg_count<7> | 1 | number_0_IBUF | 1 | NULL | 0 | 37 | 49152
-FBPIN | 9 | reg_count<6> | 1 | select_source_laser_IBUF | 1 | NULL | 0 | 36 | 49152
-FBPIN | 10 | reg_count<5> | 1 | NULL | 0 | NULL | 0 | 35 | 49152
-FBPIN | 11 | reg_count<4> | 1 | number_1_IBUF | 1 | NULL | 0 | 34 | 49152
-FBPIN | 12 | reg_count<3> | 1 | NULL | 0 | NULL | 0 | 33 | 49152
-FBPIN | 13 | reg_count<2> | 1 | number_2_IBUF | 1 | NULL | 0 | 29 | 49152
-FBPIN | 14 | reg_count<1> | 1 | NULL | 0 | NULL | 0 | 28 | 49152
-FBPIN | 15 | $OpTx$$OpTx$FX_DC$5_INV$175 | 1 | number_5_IBUF | 1 | NULL | 0 | 27 | 49152
-FBPIN | 16 | EXP6_ | 1 | NULL | 0 | NULL | 0 | 26 | 49152
-FBPIN | 17 | EXP7_ | 1 | NULL | 0 | NULL | 0 | 25 | 49152
-FBPIN | 18 | pwm_out | 1 | NULL | 0 | NULL | 0
+FBPIN | 1 | EXP10_ | 1 | NULL | 0 | NULL | 0
+FBPIN | 2 | NULL | 0 | start_IBUF | 1 | NULL | 0 | 99 | 51200
+FBPIN | 14 | reg_pwm<6> | 1 | number_0_IBUF | 1 | NULL | 0 | 8 | 49152
+FBPIN | 15 | reg_pwm<5> | 1 | number_3_IBUF | 1 | NULL | 0 | 9 | 49152
+FBPIN | 16 | reg_pwm<4> | 1 | NULL | 0 | NULL | 0
+FBPIN | 17 | reg_pwm<3> | 1 | NULL | 0 | NULL | 0 | 10 | 49152
+FBPIN | 18 | $OpTx$INV$11 | 1 | NULL | 0 | NULL | 0
 
-FB_INSTANCE | INPUTPINS_FOOBAR3_ | pwm_COPY_0_COPY_0 | 0 | 0 | 0
+FB_INSTANCE | FOOBAR3_ | pwm_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 1 | $OpTx$$OpTx$FX_DC$13_INV$183 | 1 | NULL | 0 | NULL | 0
+FBPIN | 2 | NULL | 0 | lach_IBUF | 1 | NULL | 0 | 23 | 57344
+FBPIN | 14 | EXP11_ | 1 | NULL | 0 | NULL | 0 | 32 | 49152
+FBPIN | 15 | EXP12_ | 1 | NULL | 0 | NULL | 0 | 33 | 49152
+FBPIN | 16 | pwm_out | 1 | NULL | 0 | NULL | 0
+FBPIN | 17 | EXP13_ | 1 | NULL | 0 | NULL | 0 | 34 | 49152
+FBPIN | 18 | EXP14_ | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | FOOBAR4_ | pwm_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 9 | NULL | 0 | number_1_IBUF | 1 | NULL | 0 | 92 | 49152
+FBPIN | 17 | reg_pwm<7> | 1 | NULL | 0 | NULL | 0 | 97 | 49152
+FBPIN | 18 | reg_pwm<2> | 1 | NULL | 0 | NULL | 0
+
+FB_INSTANCE | FOOBAR5_ | pwm_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR6_ | pwm_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 8 | NULL | 0 | number_5_IBUF | 1 | NULL | 0 | 78 | 49152
+FBPIN | 11 | NULL | 0 | number_6_IBUF | 1 | NULL | 0 | 80 | 49152
+FBPIN | 17 | NULL | 0 | number_4_IBUF | 1 | NULL | 0 | 86 | 49152
+
+FB_INSTANCE | FOOBAR7_ | pwm_COPY_0_COPY_0 | 0 | 0 | 0
+
+FB_INSTANCE | FOOBAR8_ | pwm_COPY_0_COPY_0 | 0 | 0 | 0
+FBPIN | 17 | NULL | 0 | number_7_IBUF | 1 | NULL | 0 | 73 | 49152
+
+FB_INSTANCE | INPUTPINS_FOOBAR9_ | pwm_COPY_0_COPY_0 | 0 | 0 | 0
 
 BUSINFO | NUMBER<7:0> | 8 | 0 | 0 | number<0> | 7 | number<1> | 6 | number<2> | 5 | number<3> | 4 | number<4> | 3 | number<5> | 2 | number<6> | 1 | number<7> | 0
 
-FB_ORDER_OF_INPUTS | FOOBAR1_ | 3 | number<1> | 34 | 6 | start | 39 | 8 | number<3> | 40 | 20 | number<5> | 27 | 22 | number<2> | 29
-FB_ORDER_OF_INPUTS | FOOBAR1_ | 25 | number<4> | 42 | 26 | number<7> | 2 | 39 | number<6> | 1 | 44 | number<0> | 37
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 10 | reg_count<7> | NULL | 11 | reg_count<5> | NULL | 12 | reg_count<4> | NULL | 15 | reg_count<0> | NULL | 18 | reg_count<3> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 20 | number<1> | 92 | 21 | start | 99 | 26 | reg_count<6> | NULL | 29 | reg_count<2> | NULL | 31 | number<0> | 8
+FB_ORDER_OF_INPUTS | FOOBAR1_ | 37 | reg_count<1> | NULL | 52 | pwm_out | NULL
 
-FB_IMUX_INDEX | FOOBAR1_ | -1 | -1 | -1 | 39 | -1 | -1 | 42 | -1 | 44 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 49 | -1 | 43 | -1 | -1 | 46 | 54 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 52 | -1 | -1 | -1 | -1 | 38 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+FB_IMUX_INDEX | FOOBAR1_ | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 10 | 11 | 12 | -1 | -1 | 15 | -1 | -1 | 13 | -1 | 150 | 176 | -1 | -1 | -1 | -1 | 17 | -1 | -1 | 14 | -1 | 198 | -1 | -1 | -1 | -1 | -1 | 16 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 51 | -1
 
 
-FB_ORDER_OF_INPUTS | FOOBAR2_ | 0 | select_source_laser | 36 | 2 | $OpTx$INV$3.UIM | NULL | 8 | reg_count<6> | NULL | 9 | reg_count<0> | NULL | 14 | $OpTx$$OpTx$FX_DC$5_INV$175.UIM | NULL
-FB_ORDER_OF_INPUTS | FOOBAR2_ | 15 | reg_pwm<2> | NULL | 17 | reg_pwm<0> | NULL | 18 | reg_count<3> | NULL | 19 | reg_count<1> | NULL | 20 | reg_count<5> | NULL
-FB_ORDER_OF_INPUTS | FOOBAR2_ | 21 | reg_count<2> | NULL | 25 | reg_pwm<7> | NULL | 27 | reg_pwm<6> | NULL | 31 | reg_pwm<1> | NULL | 39 | reg_count<4> | NULL
-FB_ORDER_OF_INPUTS | FOOBAR2_ | 40 | reg_count<7> | NULL | 43 | reg_pwm<4> | NULL | 45 | pwm_out | NULL | 48 | reg_pwm<3> | NULL | 51 | reg_pwm<5> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 3 | number<4> | 86 | 8 | reg_pwm<1> | NULL | 11 | number<6> | 80 | 12 | reg_count<4> | NULL | 15 | reg_count<0> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 21 | start | 99 | 26 | reg_pwm<2> | NULL | 29 | reg_count<2> | NULL | 31 | reg_pwm<4> | NULL | 37 | reg_count<1> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR2_ | 38 | number<3> | 9 | 43 | number<5> | 78 | 51 | reg_pwm<0> | NULL
 
-FB_IMUX_INDEX | FOOBAR2_ | 36 | -1 | 20 | -1 | -1 | -1 | -1 | -1 | 26 | 9 | -1 | -1 | -1 | -1 | 32 | 15 | -1 | 17 | 29 | 31 | 27 | 30 | -1 | -1 | -1 | 10 | -1 | 11 | -1 | -1 | -1 | 16 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 28 | 25 | -1 | -1 | 13 | -1 | 35 | -1 | -1 | 14 | -1 | -1 | 12 | -1 | -1
+FB_IMUX_INDEX | FOOBAR2_ | -1 | -1 | -1 | 147 | -1 | -1 | -1 | -1 | 8 | -1 | -1 | 155 | 12 | -1 | -1 | 15 | -1 | -1 | -1 | -1 | -1 | 176 | -1 | -1 | -1 | -1 | 71 | -1 | -1 | 14 | -1 | 33 | -1 | -1 | -1 | -1 | -1 | 16 | 202 | -1 | -1 | -1 | -1 | 167 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 9 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 10 | reg_count<7> | NULL | 11 | reg_count<5> | NULL | 12 | reg_count<4> | NULL | 16 | reg_pwm<3> | NULL | 18 | reg_count<3> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 20 | $OpTx$INV$11.UIM | NULL | 26 | reg_count<6> | NULL | 29 | reg_pwm<6> | NULL | 31 | reg_pwm<4> | NULL | 32 | reg_pwm<5> | NULL
+FB_ORDER_OF_INPUTS | FOOBAR3_ | 37 | reg_pwm<7> | NULL | 43 | $OpTx$$OpTx$FX_DC$13_INV$183.UIM | NULL
+
+FB_IMUX_INDEX | FOOBAR3_ | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 10 | 11 | 12 | -1 | -1 | -1 | 34 | -1 | 13 | -1 | 35 | -1 | -1 | -1 | -1 | -1 | 17 | -1 | -1 | 31 | -1 | 33 | 32 | -1 | -1 | -1 | -1 | 70 | -1 | -1 | -1 | -1 | -1 | 36 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
+
+
+FB_ORDER_OF_INPUTS | FOOBAR4_ | 20 | number<2> | 14 | 21 | start | 99 | 43 | number<7> | 73
+
+FB_IMUX_INDEX | FOOBAR4_ | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 214 | 176 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | 183 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1 | -1
 
 
 GLOBAL_FCLK | clk_counter | 0 | 0 | lach | 1 | 1

@@ -4,13 +4,13 @@ Copyright (c) 1995-2013 Xilinx, Inc.  All rights reserved.
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> Parameter xsthdpdir set to xst
 
 
 Total REAL time to Xst completion: 0.00 secs
-Total CPU time to Xst completion: 0.08 secs
+Total CPU time to Xst completion: 0.07 secs
  
 --> Reading design: pwm.prj
 
@@ -75,7 +75,7 @@ wysiwyg                            : NO
 =========================================================================
 *                          HDL Compilation                              *
 =========================================================================
-Compiling vhdl file "C:/Users/Nima/Desktop/pwm/pwm/pwm.vhd" in Library work.
+Compiling vhdl file "C:/Users/Nima/Desktop/PP/pwm/pwm.vhd" in Library work.
 Entity <pwm> compiled.
 Entity <pwm> (Architecture <behavioral>) compiled.
 
@@ -89,8 +89,8 @@ Analyzing hierarchy for entity <pwm> in library <work> (architecture <behavioral
 *                            HDL Analysis                               *
 =========================================================================
 Analyzing Entity <pwm> in library <work> (Architecture <behavioral>).
-WARNING:Xst:819 - "C:/Users/Nima/Desktop/pwm/pwm/pwm.vhd" line 67: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
-   <pwm_out>, <test>
+WARNING:Xst:819 - "C:/Users/Nima/Desktop/PP/pwm/pwm.vhd" line 46: One or more signals are missing in the process sensitivity list. To enable synthesis of FPGA/CPLD hardware, XST will assume that all necessary signals are present in the sensitivity list. Please note that the result of the synthesis may differ from the initial design specification. The missing signals are:
+   <pwm_out>
 Entity <pwm> analyzed. Unit <pwm> generated.
 
 
@@ -101,15 +101,16 @@ Entity <pwm> analyzed. Unit <pwm> generated.
 Performing bidirectional port resolution...
 
 Synthesizing Unit <pwm>.
-    Related source file is "C:/Users/Nima/Desktop/pwm/pwm/pwm.vhd".
+    Related source file is "C:/Users/Nima/Desktop/PP/pwm/pwm.vhd".
     Found 1-bit register for signal <pwm_out>.
-    Found 8-bit comparator greatequal for signal <pwm_out$cmp_ge0000> created at line 53.
+    Found 8-bit comparator greatequal for signal <pwm_out$cmp_ge0000> created at line 54.
     Found 8-bit up counter for signal <reg_count>.
+    Found 9-bit comparator greater for signal <reg_count$cmp_gt0000> created at line 51.
     Found 8-bit register for signal <reg_pwm>.
     Summary:
 	inferred   1 Counter(s).
 	inferred   1 D-type flip-flop(s).
-	inferred   1 Comparator(s).
+	inferred   2 Comparator(s).
 Unit <pwm> synthesized.
 
 
@@ -122,8 +123,9 @@ Macro Statistics
 # Registers                                            : 2
  1-bit register                                        : 1
  8-bit register                                        : 1
-# Comparators                                          : 1
+# Comparators                                          : 2
  8-bit comparator greatequal                           : 1
+ 9-bit comparator greater                              : 1
 
 =========================================================================
 
@@ -148,15 +150,14 @@ Macro Statistics
 =========================================================================
 
 Optimizing unit <pwm> ...
-  implementation constraint: INIT=r	 : reg_pwm_7
+  implementation constraint: INIT=r	 : reg_pwm_6
+  implementation constraint: INIT=r	 : reg_count_7
   implementation constraint: INIT=r	 : reg_pwm_0
   implementation constraint: INIT=r	 : reg_pwm_1
   implementation constraint: INIT=r	 : reg_pwm_2
   implementation constraint: INIT=r	 : reg_pwm_3
   implementation constraint: INIT=r	 : reg_pwm_4
   implementation constraint: INIT=r	 : reg_pwm_5
-  implementation constraint: INIT=r	 : reg_pwm_6
-  implementation constraint: INIT=r	 : reg_count_7
   implementation constraint: INIT=r	 : reg_count_6
   implementation constraint: INIT=r	 : reg_count_5
   implementation constraint: INIT=r	 : reg_count_4
@@ -164,6 +165,7 @@ Optimizing unit <pwm> ...
   implementation constraint: INIT=r	 : reg_count_2
   implementation constraint: INIT=r	 : reg_count_1
   implementation constraint: INIT=r	 : reg_count_0
+  implementation constraint: INIT=r	 : reg_pwm_7
 
 =========================================================================
 *                           Partition Report                            *
@@ -192,32 +194,33 @@ Clock Enable                       : YES
 wysiwyg                            : NO
 
 Design Statistics
-# IOs                              : 13
+# IOs                              : 12
 
 Cell Usage :
-# BELS                             : 71
-#      AND2                        : 19
+# BELS                             : 87
+#      AND2                        : 28
 #      AND3                        : 3
+#      AND5                        : 1
 #      GND                         : 1
-#      INV                         : 24
-#      OR2                         : 16
-#      OR3                         : 1
+#      INV                         : 30
+#      OR2                         : 15
+#      OR3                         : 2
 #      XOR2                        : 7
 # FlipFlops/Latches                : 17
 #      FDC                         : 9
 #      FDCE                        : 8
-# IO Buffers                       : 13
-#      IBUF                        : 12
+# IO Buffers                       : 12
+#      IBUF                        : 11
 #      OBUF                        : 1
 =========================================================================
 
 
 Total REAL time to Xst completion: 3.00 secs
-Total CPU time to Xst completion: 2.91 secs
+Total CPU time to Xst completion: 2.69 secs
  
 --> 
 
-Total memory usage is 4498308 kilobytes
+Total memory usage is 4498324 kilobytes
 
 Number of errors   :    0 (   0 filtered)
 Number of warnings :    1 (   0 filtered)
